@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Phone, ChevronDown, Menu, X, Mail, Clock, ShowerHead, Bath, Droplets, Accessibility } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -44,16 +45,16 @@ export default function Header() {
                                 className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors"
                                 aria-label="Call us for a free quote"
                             >
-                                (123) 456-7890
+                                (248) 346-8926
                             </a>
                         </div>
                         <div className="hidden md:flex items-center space-x-2 group">
                             <Mail className="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
                             <a
-                                href="mailto:info@stone work remodeling.com"
+                                href="mailto:stoneworksremodeling8@gmail.com"
                                 className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors"
                             >
-                                info@stone work remodeling.com
+                                stoneworksremodeling8@gmail.com
                             </a>
                         </div>
                     </div>
@@ -77,10 +78,12 @@ export default function Header() {
                     >
                         <div className="flex items-center gap-4 group hover:scale-105 transition-transform duration-300">
                             <div className="w-16 h-16 rounded-full overflow-hidden shadow-md border border-gray-200">
-                                <img
-                                    src="/stone.jpg"
+                                <Image
+                                    src="/stone.jpg"  // local image path
                                     alt="Stone Work Remodeling Logo"
                                     className="w-full h-full object-cover"
+                                    width={500}  // Set the width for the image
+                                    height={300}  // Set the height for the image
                                 />
                             </div>
                             <div className="flex flex-col">
@@ -431,13 +434,13 @@ export default function Header() {
                     <div className="flex items-center space-x-2 py-2">
                         <Phone className="h-4 w-4 text-blue-600" />
                         <a href="tel:+1234567890" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-                            (123) 456-7890
+                        (248) 346-8926
                         </a>
                     </div>
                     <div className="flex items-center space-x-2 py-2">
                         <Mail className="h-4 w-4 text-blue-600" />
-                        <a href="mailto:info@stone work remodeling.com" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-                            info@stone work remodeling.com
+                        <a href="mailto:stoneworksremodeling8@gmail.com" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                        stoneworksremodeling8@gmail.com
                         </a>
                     </div>
                     <div className="flex items-center space-x-2 py-2">

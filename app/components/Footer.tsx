@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -10,10 +11,12 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center gap-4 group hover:scale-105 transition-transform duration-300">
                             <div className="w-16 h-16 overflow-hidden shadow-md">
-                                <img
-                                    src="/stone.jpg"
+                                <Image
+                                    src="/stone.jpg"  // local image path
                                     alt="Stone Work Remodeling Logo"
                                     className="w-full h-full object-cover"
+                                    width={500}  // Set the width for the image
+                                    height={300}  // Set the height for the image
                                 />
                             </div>
                             <div className="flex flex-col">
@@ -94,11 +97,11 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li className="flex items-center">
                                 <Phone className="h-5 w-5 mr-2 text-gray-500" />
-                                <a href="tel:+1234567890" className="hover:text-blue-600">(123) 456-7890</a>
+                                <a href="tel:+1234567890" className="hover:text-blue-600">(248) 346-8926</a>
                             </li>
                             <li className="flex items-center">
                                 <MessageCircle className="h-5 w-5 mr-2 text-gray-500" />
-                                <a href="mailto:info@stoneworkremodeling.com" className="hover:text-blue-600">info@stoneworkremodeling.com</a>
+                                <a href="mailto:stoneworksremodeling8@gmail.com" className="hover:text-blue-600">stoneworksremodeling8@gmail.com</a>
                             </li>
                             <li className="flex items-start">
                                 <svg className="h-5 w-5 mr-2 text-gray-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

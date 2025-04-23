@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import HomePage from "./components/Home";
 // import GalleryPage from "./(marketing)/gallery/page";
 

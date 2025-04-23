@@ -1,4 +1,4 @@
-import { FaShower, FaBath, FaWater, FaAccessibleIcon, FaHammer, FaCheckCircle } from 'react-icons/fa';
+import { FaShower, FaBath, FaWater, FaAccessibleIcon, FaCheckCircle } from 'react-icons/fa';
 
 export default function ServicesPage() {
   return (

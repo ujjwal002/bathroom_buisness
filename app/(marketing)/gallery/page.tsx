@@ -96,8 +96,8 @@ export default function GalleryPage() {
       title: "Luxury Master Bathroom",
       description: "Complete remodel with marble tile, freestanding soaker tub, and custom glass shower enclosure.",
       category: "bathroom-remodel",
-      beforeImage: "/api/placeholder/600/400",
-      afterImage: "/api/placeholder/600/400",
+      beforeImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/Gemini_Generated_Image_7bprdt7bprdt7bpr.jpeg",
+      afterImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "before-after",
       featured: true,
     },
@@ -106,8 +106,8 @@ export default function GalleryPage() {
       title: "Modern Shower Conversion",
       description: "Tub-to-shower conversion with frameless glass, rainfall showerhead, and built-in niche storage.",
       category: "shower-conversion",
-      beforeImage: "/api/placeholder/600/400",
-      afterImage: "/api/placeholder/600/400",
+      beforeImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
+      afterImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "before-after",
       featured: true,
     },
@@ -116,8 +116,8 @@ export default function GalleryPage() {
       title: "Accessible Walk-in Tub",
       description: "ADA-compliant walk-in tub with hydrotherapy jets, anti-slip flooring, and integrated seat.",
       category: "walk-in-tub",
-      beforeImage: "/api/placeholder/600/400",
-      afterImage: "/api/placeholder/600/400",
+      beforeImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
+      afterImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "before-after",
     },
     {
@@ -125,8 +125,8 @@ export default function GalleryPage() {
       title: "Contemporary Guest Bathroom",
       description: "Full renovation with floating vanity, LED lighting, and porcelain tile throughout.",
       category: "bathroom-remodel",
-      beforeImage: "/api/placeholder/600/400",
-      afterImage: "/api/placeholder/600/400",
+      beforeImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
+      afterImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "before-after",
     },
     {
@@ -134,7 +134,7 @@ export default function GalleryPage() {
       title: "Spa-Inspired Master Suite",
       description: "Luxury remodel with heated floors, digital shower system, and custom cabinetry.",
       category: "bathroom-remodel",
-      image: "/api/placeholder/600/400",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "recent",
       featured: true,
     },
@@ -143,7 +143,7 @@ export default function GalleryPage() {
       title: "Walk-in Shower Installation",
       description: "Zero-threshold shower with bench seating, multiple showerheads, and decorative accent tile.",
       category: "shower-conversion",
-      image: "/api/placeholder/600/400",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "recent",
     },
     {
@@ -151,7 +151,7 @@ export default function GalleryPage() {
       title: "Therapeutic Walk-in Tub",
       description: "Safety-focused bathroom with quick-drain walk-in tub, grab bars, and comfort-height toilet.",
       category: "walk-in-tub",
-      image: "/api/placeholder/600/400",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "recent",
     },
     {
@@ -159,7 +159,7 @@ export default function GalleryPage() {
       title: "Mid-Century Modern Update",
       description: "Period-appropriate renovation with subway tile, penny flooring, and vintage-inspired fixtures.",
       category: "bathroom-remodel",
-      image: "/api/placeholder/600/400",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "recent",
     },
     {
@@ -167,8 +167,8 @@ export default function GalleryPage() {
       title: "Small Bathroom Transformation",
       description: "Space-maximizing remodel with corner shower, wall-mounted toilet, and built-in storage solutions.",
       category: "bathroom-remodel",
-      beforeImage: "/api/placeholder/600/400",
-      afterImage: "/api/placeholder/600/400",
+      beforeImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
+      afterImage: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/image.jpg",
       type: "before-after",
     },
   ];
@@ -274,7 +274,7 @@ export default function GalleryPage() {
     return () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, [lightboxImage]);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -440,6 +440,8 @@ export default function GalleryPage() {
                               sizes="(max-width: 768px) 100vw, 33vw"
                               className="object-cover"
                               loading="lazy"
+                              // width={500}
+                              // height={500}
                             />
                             <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded font-medium">
                               BEFORE
@@ -462,6 +464,8 @@ export default function GalleryPage() {
                               sizes="(max-width: 768px) 100vw, 33vw"
                               className="object-cover"
                               loading="lazy"
+                              // width={500}
+                              // height={500}
                             />
                             <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded font-medium">
                               AFTER

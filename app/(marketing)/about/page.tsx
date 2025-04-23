@@ -40,7 +40,7 @@ function SEOMetadata() {
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://stone work remodeling.com/about" />
-      <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+      <meta property="og:image" content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/krY1iLp90R9l3kcrrUhu-.png" />
       <link rel="canonical" href="https://stone work remodeling.com/about" />
       <script
         type="application/ld+json"
@@ -63,9 +63,9 @@ function SEOMetadata() {
             },
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+1-800-555-1234",
+              telephone: "+1 (248) 346-8926",
               contactType: "Customer Service",
-              email: "info@stone work remodeling.com",
+              email: "stoneworksremodeling8@gmail.com",
             },
             sameAs: [
               "https://www.facebook.com/stone work remodeling",
@@ -153,7 +153,7 @@ export default function AboutPage() {
       <style jsx global>{`
         .hero-bg {
           background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+            url("https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/krY1iLp90R9l3kcrrUhu-.png");
           background-size: cover;
           background-position: center;
         }
@@ -206,10 +206,9 @@ export default function AboutPage() {
       </section>
 
       {/* Sticky Navigation Bar */}
-      <div
-        className={`sticky top-0 z-40 bg-white shadow-md transition-all duration-300 ${
-          isScrolled ? "py-2" : "py-4"
-        }`}
+      {/* <div
+        className={`sticky top-0 z-40 bg-white shadow-md transition-all duration-300 ${isScrolled ? "py-2" : "py-4"
+          }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
@@ -238,7 +237,7 @@ export default function AboutPage() {
             </nav>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Our Story Section */}
       <section className="py-12 sm:py-16 bg-white">
@@ -257,7 +256,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-64 sm:h-96 fade-in visible">
               <Image
-                src="https://images.unsplash.com/photo-1595514191830-3e96a518989b"
+                src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/w6HJzxSeslcbuk0sJgPQc.png"
                 alt="stone work remodeling bathroom project"
                 fill
                 className="object-cover rounded-lg shadow-lg"
@@ -366,7 +365,7 @@ export default function AboutPage() {
               >
                 <Quote className="h-8 w-8 text-gold-500 mb-4" />
                 <p className="text-gray-600 text-base mb-4 italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <p className="text-navy-900 font-semibold">{testimonial.author}</p>
                 <p className="text-gray-500 text-sm">{testimonial.location}</p>
