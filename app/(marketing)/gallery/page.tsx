@@ -274,7 +274,7 @@ export default function GalleryPage() {
     return () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, []);
+  }, [lightboxImage]);
 
   return (
     <div className="min-h-screen bg-gray-50">

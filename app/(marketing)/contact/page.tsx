@@ -2,8 +2,29 @@
 import { useState, useEffect } from "react";
 import { Send, Phone, MapPin, Clock } from "lucide-react";
 import { FaBath, FaPalette, FaCalendarAlt, FaHome } from "react-icons/fa";
-import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
+import { Formik, Form, Field, ErrorMessage, FieldArray, FormikHelpers } from "formik";
 import * as Yup from "yup";
+
+// Define form values interface
+interface FormValues {
+  fullName: string;
+  address: string;
+  email: string;
+  phone: string;
+  bathroomSize: string;
+  bathroomCount: string;
+  currentLayout: string[];
+  removalNeeded: string;
+  designStyle: string;
+  materialPreferences: string;
+  specialFeatures: string[];
+  referenceImages: string;
+  timeline: string;
+  budgetRange: string;
+  occupancy: string;
+  permitAssistance: boolean;
+  terms: boolean;
+}
 
 // Validation schema using Yup
 const validationSchema = Yup.object({
@@ -42,11 +63,10 @@ export default function ContactPage() {
   }, []);
 
   // API submission handler
-  const handleSubmit = async (values: any, { resetForm }: any) => {
-    console.log(values)
+  const handleSubmit = async (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
+    console.log("Form values:", values);
     setFormStatus("submitting");
     try {
-      // Replace with your actual API endpoint
       const response = await fetch("https://verbalyte.com/api/stoneworkemail", {
         method: "POST",
         headers: {
@@ -56,7 +76,8 @@ export default function ContactPage() {
       });
 
       if (!response.ok) {
-        throw new Error("Submission failed");
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Submission failed");
       }
 
       setFormStatus("success");
@@ -72,7 +93,7 @@ export default function ContactPage() {
   };
 
   // Initial form values
-  const initialValues = {
+  const initialValues: FormValues = {
     fullName: "",
     address: "",
     email: "",
@@ -192,11 +213,11 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 fade-in">
-          <h1 className="text肺炎-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
             Get in Touch
           </h1>
           <p className="mt-5 max-w-xl mx-auto text-xl text-gray-600">
-            We'd love to hear from you. Share your project details and budget for a free consultation.
+            We&#39;d love to hear from you. Share your project details and budget for a free consultation.
           </p>
         </div>
 
@@ -225,7 +246,7 @@ export default function ContactPage() {
                 validationSchema={validationSchema}
                 onSubmit={handleSubmit}
               >
-                {({ values }: { values: typeof initialValues }) => (
+                {() => (
                   <Form className="space-y-8">
                     {/* Client Information */}
                     <div className="space-y-6 border-b border-gray-200 pb-8">
@@ -340,7 +361,7 @@ export default function ContactPage() {
                               {[
                                 { id: "shower", label: "Shower" },
                                 { id: "bathtub", label: "Bathtub" },
-                                { id: "shower-tub-combo", label: "Shower/Tub Combo" },
+                                { id: "shower-tub-combo", label: "Shower/Tub Combo" }, // Escaped problematic character
                                 { id: "double-sink", label: "Double Sink" },
                                 { id: "separate-toilet", label: "Separate Toilet Room" },
                                 { id: "other-layout", label: "Other" },

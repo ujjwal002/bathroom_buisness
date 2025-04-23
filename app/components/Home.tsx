@@ -263,10 +263,12 @@ export default function HomePage() {
             {/* Service 1 */}
             <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.png"
                   alt="Complete Bathroom Remodeling"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  width={500}
+                  height={500}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">Complete Bathroom Remodeling</h3>
