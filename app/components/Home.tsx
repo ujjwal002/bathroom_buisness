@@ -75,7 +75,7 @@ export default function HomePage() {
       location: "San Diego, CA",
       quote: "stone work remodeling transformed our outdated bathroom into a modern oasis. Their attention to detail and quality craftsmanship exceeded our expectations. The project was completed on time and within budget!",
       rating: 5,
-      image: "https://www.stoneworksremodeling.com/assets/images/customer/user1.png",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user4.png",
       projectType: "Complete Bathroom Remodel"
     },
     {
@@ -84,7 +84,7 @@ export default function HomePage() {
       location: "Portland, OR",
       quote: "We needed a walk-in tub for my aging mother, and stone work remodeling made the process incredibly simple. Their design consultant was knowledgeable and helped us choose the perfect solution. Installation was fast and professional.",
       rating: 5,
-      image: "https://www.stoneworksremodeling.com/assets/images/customer/user2.png",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user5.png",
       projectType: "Walk-in Tub Installation"
     },
     {
@@ -93,17 +93,17 @@ export default function HomePage() {
       location: "Austin, TX",
       quote: "After comparing several contractors, we chose stone work remodeling for our shower conversion project. It was the best decision we could have made! Quality materials, expert installation, and outstanding customer service.",
       rating: 5,
-      image: "https://www.stoneworksremodeling.com/assets/images/customer/user2.png",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user5.png",
       projectType: "Tub-to-Shower Conversion"
     },
   ];
 
   const customerImages = [
-    'https://www.stoneworksremodeling.com/assets/images/customer/user1.png',
-    'https://www.stoneworksremodeling.com/assets/images/customer/user2.png',
-    'https://www.stoneworksremodeling.com/assets/images/customer/user3.png',
-    'https://www.stoneworksremodeling.com/assets/images/customer/user4.png',
-    'https://www.stoneworksremodeling.com/assets/images/customer/user5.png',
+    'https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user1.png',
+    'https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user2.png',
+    'https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user3.png',
+    'https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user4.png',
+    'https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/profile/user5.png',
   ];
 
   const faqs = [
