@@ -67,7 +67,7 @@ function SEOMetadata() {
 }
 
 export default function BlogPage() {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  // const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -144,7 +144,7 @@ export default function BlogPage() {
   // Handle scroll for sticky header
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      // setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
