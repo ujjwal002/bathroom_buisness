@@ -2,8 +2,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Star, Check, Phone, ArrowRight, Clock, ChevronRight, Shield, Award, ThumbsUp, ArrowDown, MapPin } from "lucide-react";
+import { Star, Check, Phone, ArrowRight, Clock, ChevronRight, Shield, Award, ThumbsUp } from "lucide-react";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
+
 
 // Lazy-load gallery images for performance
 const DynamicGalleryImage = dynamic(() => import("next/image"), { ssr: false });
@@ -12,53 +14,53 @@ const DynamicGalleryImage = dynamic(() => import("next/image"), { ssr: false });
 function SEOMetadata() {
   return (
     <>
-      <title>Stone Work Remodeling | Premium Stone Bathroom Remodeling in Owatonna, MN</title>
+      <title>Stone Works Remodeling | Premium Stone Bathroom Remodeling in Metro Detroit, MI</title>
       <meta
         name="description"
-        content="Stone Work Remodeling specializes in premium stone bathroom remodeling, shower conversions, walk-in tubs, and custom designs in Owatonna, MN. Free quotes and financing available!"
+        content="Stone Works Remodeling specializes in premium stone bathroom remodeling, shower conversions, walk-in tubs, and custom designs in Metro Detroit, MI. Free quotes and financing available!"
       />
       <meta
         name="keywords"
-        content="stone bathroom remodeling Owatonna, bathroom renovation Minnesota, stone shower conversion, walk-in tubs Owatonna, custom stone bathroom design, premium bathroom remodel"
+        content="stone bathroom remodeling Metro Detroit, bathroom renovation Michigan, stone shower conversion, walk-in tubs Metro Detroit, custom stone bathroom design, premium bathroom remodel"
       />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="author" content="Stone Work Remodeling" />
+      <meta name="author" content="Stone Works Remodeling" />
       <meta name="geo.region" content="US-MN" />
-      <meta name="geo.placename" content="Owatonna, Minnesota" />
+      <meta name="geo.placename" content="Metro Detroit, Michigan" />
       <meta name="geo.position" content="44.083996;-93.225996" />
       <meta name="ICBM" content="44.083996, -93.225996" />
 
       {/* Open Graph Tags */}
-      <meta property="og:title" content="Stone Work Remodeling | Premium Stone Bathroom Remodeling in Owatonna, MN" />
+      <meta property="og:title" content="Stone Works Remodeling | Premium Stone Bathroom Remodeling in Metro Detroit, MI" />
       <meta
         property="og:description"
-        content="Transform your bathroom with Stone Work Remodeling’s expert stone-based designs, shower conversions, and walk-in tubs in Owatonna, MN. Free quotes and financing available."
+        content="Transform your bathroom with Stone Works Remodeling’s expert stone-based designs, shower conversions, and walk-in tubs in Metro Detroit, MI. Free quotes and financing available."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://stoneworkremodeling.com" />
       <meta
         property="og:image"
-        content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.webp"
+        content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
       />
-      <meta property="og:image:alt" content="Modern stone bathroom remodel by Stone Work Remodeling in Owatonna, MN" />
+      <meta property="og:image:alt" content="Modern stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_US" />
-      <meta property="og:site_name" content="Stone Work Remodeling" />
+      <meta property="og:site_name" content="Stone Works Remodeling" />
 
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Stone Work Remodeling | Premium Stone Bathroom Remodeling in Owatonna, MN" />
+      <meta name="twitter:title" content="Stone Works Remodeling | Premium Stone Bathroom Remodeling in Metro Detroit, MI" />
       <meta
         name="twitter:description"
-        content="Transform your bathroom with Stone Work Remodeling’s expert stone-based designs in Owatonna, MN."
+        content="Transform your bathroom with Stone Works Remodeling’s expert stone-based designs in Metro Detroit, MI."
       />
       <meta
         name="twitter:image"
-        content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.webp"
+        content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
       />
-      <meta name="twitter:image:alt" content="Modern stone bathroom remodel by Stone Work Remodeling in Owatonna, MN" />
+      <meta name="twitter:image:alt" content="Modern stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI" />
 
       <link rel="canonical" href="https://stoneworkremodeling.com" />
       <link rel="icon" href="/favicon.ico" />
@@ -71,15 +73,15 @@ function SEOMetadata() {
             {
               "@context": "https://schema.org",
               "@type": "HomeAndConstructionBusiness",
-              "name": "Stone Work Remodeling",
-              "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.webp",
+              "name": "Stone Works Remodeling",
+              "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp",
               "url": "https://stoneworkremodeling.com",
               "telephone": "+12483468926",
               "email": "info@stoneworkremodeling.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4671 Sugar Camp Road",
-                "addressLocality": "Owatonna",
+                "addressLocality": "Metro Detroit",
                 "addressRegion": "MN",
                 "postalCode": "55060",
                 "addressCountry": "US",
@@ -104,9 +106,9 @@ function SEOMetadata() {
                 },
               ],
               "areaServed": [
-                { "@type": "City", "name": "Owatonna", "sameAs": "https://en.wikipedia.org/wiki/Owatonna,_Minnesota" },
-                { "@type": "City", "name": "Rochester", "sameAs": "https://en.wikipedia.org/wiki/Rochester,_Minnesota" },
-                { "@type": "City", "name": "Faribault", "sameAs": "https://en.wikipedia.org/wiki/Faribault,_Minnesota" },
+                { "@type": "City", "name": "Metro Detroit", "sameAs": "https://en.wikipedia.org/wiki/Metro Detroit,_Michigan" },
+                { "@type": "City", "name": "Rochester", "sameAs": "https://en.wikipedia.org/wiki/Rochester,_Michigan" },
+                { "@type": "City", "name": "Faribault", "sameAs": "https://en.wikipedia.org/wiki/Faribault,_Michigan" },
               ],
               "sameAs": [
                 "https://www.facebook.com/stoneworkremodeling",
@@ -122,23 +124,23 @@ function SEOMetadata() {
                 {
                   "@type": "Offer",
                   "name": "Complete Bathroom Remodeling",
-                  "description": "Comprehensive stone bathroom remodeling with custom designs in Owatonna, MN",
+                  "description": "Comprehensive stone bathroom remodeling with custom designs in Metro Detroit, MI",
                   "url": "https://stoneworkremodeling.com/services/bathroom-remodeling",
-                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.webp",
+                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp",
                 },
                 {
                   "@type": "Offer",
                   "name": "Shower Conversion",
-                  "description": "Tub-to-shower conversions with stone finishes in Owatonna, MN",
+                  "description": "Tub-to-shower conversions with stone finishes in Metro Detroit, MI",
                   "url": "https://stoneworkremodeling.com/services/shower-conversion",
-                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/2gOE7M5Mw4F9ecfLC92pQ.webp",
+                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/2gOE7M5Mw4F9ecfLC92pQ.webp",
                 },
                 {
                   "@type": "Offer",
                   "name": "Walk-in Tubs",
-                  "description": "Accessible walk-in tubs with safety features in Owatonna, MN",
+                  "description": "Accessible walk-in tubs with safety features in Metro Detroit, MI",
                   "url": "https://stoneworkremodeling.com/services/walk-in-tubs",
-                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/w6HJzxSeslcbuk0sJgPQc.webp",
+                  "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp",
                 },
               ],
             },
@@ -159,7 +161,7 @@ function SEOMetadata() {
                   "name": "Do you offer financing options?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! We offer flexible financing options including 0% interest for 12 months for qualified buyers in Owatonna, MN.",
+                    "text": "Yes! We offer flexible financing options including 0% interest for 12 months for qualified buyers in Metro Detroit, MI.",
                   },
                 },
                 {
@@ -175,7 +177,7 @@ function SEOMetadata() {
                   "name": "Do I need to obtain permits for my bathroom remodel?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our team handles all permitting processes to ensure compliance with Owatonna, MN building codes.",
+                    "text": "Our team handles all permitting processes to ensure compliance with Metro Detroit, MI building codes.",
                   },
                 },
               ],
@@ -187,68 +189,7 @@ function SEOMetadata() {
   );
 }
 
-// Footer Component
-function Footer() {
-  return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Stone Work Remodeling</h3>
-            <p className="text-gray-400">
-              Transforming bathrooms with premium stone designs in Owatonna, MN.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-400">
-              <Phone className="inline h-5 w-5 mr-2" />
-              <a href="tel:+12483468926">+1 (248) 346-8926</a>
-            </p>
-            <p className="text-gray-400">
-              <MapPin className="inline h-5 w-5 mr-2" />
-              4671 Sugar Camp Road, Owatonna, MN 55060
-            </p>
-            <p className="text-gray-400">
-              <Clock className="inline h-5 w-5 mr-2" />
-              Mon-Fri: 9:00 AM - 5:00 PM
-              <br />
-              Sat-Sun: Closed
-            </p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/services" className="text-gray-400 hover:text-white">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="text-gray-400 hover:text-white">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="mt-8 text-center text-gray-500">
-          © 2025 Stone Work Remodeling. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  );
-}
+
 
 export default function HomePage() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -259,35 +200,35 @@ export default function HomePage() {
     {
       id: 1,
       name: "Jennifer L.",
-      location: "Owatonna, MN",
+      location: "Metro Detroit, MI",
       quote:
-        "Stone Work Remodeling transformed our outdated bathroom into a stunning stone oasis. Their craftsmanship and attention to detail were exceptional!",
+        "Stone Works Remodeling transformed our outdated bathroom into a stunning stone oasis. Their craftsmanship and attention to detail were exceptional!",
       rating: 5,
       image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user4.webp",
-      projectType: "Complete Stone Bathroom Remodel",
-      alt: "Jennifer L., satisfied Stone Work Remodeling customer in Owatonna, MN",
+      projectType: "",
+      alt: "Jennifer L., satisfied Stone Works Remodeling customer in Metro Detroit, MI",
     },
     {
       id: 2,
       name: "Michael T.",
-      location: "Rochester, MN",
+      location: "Rochester, MI",
       quote:
-        "We needed a walk-in tub for accessibility, and Stone Work Remodeling delivered a perfect solution with professional installation. Highly recommend!",
+        "We needed a walk-in tub for accessibility, and Stone Works Remodeling delivered a perfect solution with professional installation. Highly recommend!",
       rating: 5,
       image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user5.webp",
       projectType: "Walk-in Tub Installation",
-      alt: "Michael T., Stone Work Remodeling walk-in tub client in Rochester, MN",
+      alt: "Michael T., Stone Works Remodeling walk-in tub client in Rochester, MI",
     },
     {
       id: 3,
       name: "Rachel K.",
-      location: "Faribault, MN",
+      location: "Faribault, MI",
       quote:
-        "Stone Work Remodeling’s shower conversion was flawless. The stone finishes and custom design made our bathroom feel luxurious!",
+        "Stone Works Remodeling’s shower conversion was flawless. The stone finishes and custom design made our bathroom feel luxurious!",
       rating: 5,
       image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user3.webp",
       projectType: "Tub-to-Shower Conversion",
-      alt: "Rachel K., Stone Work Remodeling shower conversion client in Faribault, MN",
+      alt: "Rachel K., Stone Works Remodeling shower conversion client in Faribault, MI",
     },
   ];
 
@@ -303,35 +244,35 @@ export default function HomePage() {
   const customerImages: CustomerImage[] = [
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user1.webp",
-      alt: "Satisfied Stone Work Remodeling customer in Owatonna, MN",
+      alt: "Satisfied Stone Works Remodeling customer in Metro Detroit, MI",
       role: "Satisfied homeowner",
       blurDataURL:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user2.webp",
-      alt: "Recent Stone Work Remodeling client for bathroom remodel",
+      alt: "Recent Stone Works Remodeling client for bathroom remodel",
       role: "Recent client",
       blurDataURL:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user3.webp",
-      alt: "Stone Work Remodeling customer for shower conversion",
+      alt: "Stone Works Remodeling customer for shower conversion",
       role: "Shower conversion client",
       blurDataURL:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user4.webp",
-      alt: "Stone Work Remodeling homeowner in Minnesota",
+      alt: "Stone Works Remodeling homeowner in Michigan",
       role: "Homeowner",
       blurDataURL:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user5.webp",
-      alt: "Stone Work Remodeling walk-in tub installation client",
+      alt: "Stone Works Remodeling walk-in tub installation client",
       role: "Walk-in tub client",
       blurDataURL:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
@@ -351,7 +292,7 @@ export default function HomePage() {
   const beforeAfterImages: GalleryImage[] = [
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/Gemini_Generated_Image_7bprdt7bprdt7bpr.webp",
-      alt: "Before stone bathroom remodel in Owatonna, MN by Stone Work Remodeling",
+      alt: "Before stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -359,7 +300,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image.webp",
-      alt: "After stone bathroom remodel in Owatonna, MN by Stone Work Remodeling",
+      alt: "After stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -367,7 +308,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image+(2).webp",
-      alt: "Before tub-to-shower conversion in Owatonna, MN by Stone Work Remodeling",
+      alt: "Before tub-to-shower conversion in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -375,7 +316,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/_QE_wu8yh888nrX1JUzYt.webp",
-      alt: "After tub-to-shower conversion in Owatonna, MN by Stone Work Remodeling",
+      alt: "After tub-to-shower conversion in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -383,7 +324,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image+(1).webp",
-      alt: "Before walk-in tub installation in Owatonna, MN by Stone Work Remodeling",
+      alt: "Before walk-in tub installation in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -391,7 +332,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp",
-      alt: "After walk-in tub installation in Owatonna, MN by Stone Work Remodeling",
+      alt: "After walk-in tub installation in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -402,7 +343,7 @@ export default function HomePage() {
   const recentProjects: GalleryImage[] = [
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/NctOfmDbqGoQGM2Qm9a8C.webp",
-      alt: "Luxury stone bathroom remodel in Owatonna, MN by Stone Work Remodeling",
+      alt: "Luxury stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -410,7 +351,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/i5a_set3C7bnEDegPuZld.webp",
-      alt: "Modern stone shower conversion in Owatonna, MN by Stone Work Remodeling",
+      alt: "Modern stone shower conversion in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -418,7 +359,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/krY1iLp90R9l3kcrrUhu-.webp",
-      alt: "Accessible walk-in tub installation in Owatonna, MN by Stone Work Remodeling",
+      alt: "Accessible walk-in tub installation in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -429,25 +370,25 @@ export default function HomePage() {
   // FAQs with local context
   const faqs = [
     {
-      question: "How long does a typical stone bathroom remodel take in Owatonna, MN?",
+      question: "How long does a stone bathroom remodel take in Metro Detroit, MI?",
       answer:
-        "Most standard stone bathroom remodels are completed within 5-7 business days. Larger projects or custom designs may take 2-3 weeks. We provide a specific timeline during your free Owatonna consultation.",
+        "Most standard  bathroom remodels are completed within 10 business days. Larger projects or custom designs may take 2-3 weeks. We provide a specific timeline during your free Metro Detroit consultation.",
     },
     {
-      question: "Do you offer financing options for bathroom remodeling in Minnesota?",
+      question: "Do you offer financing options for bathroom remodeling in Michigan?",
       answer:
-        "Yes! We offer flexible financing options, including 0% interest for 12 months for qualified buyers in Owatonna, MN, and surrounding areas like Rochester and Faribault.",
+        "Yes! We offer flexible financing options, including 0% interest for 12 months for qualified buyers in Metro Detroit, MI, and surrounding areas",
     },
     {
       question: "Are your stone products and installations covered by warranty?",
       answer:
-        "All stone products come with manufacturer warranties, and we provide a limited lifetime warranty on materials and workmanship for projects in Owatonna, MN.",
+        "All Bathroom products come with manufacturer warranties, and we provide warranty on workmanship for projects in Metro Detroit, MI.",
     },
-    {
-      question: "Do I need permits for a bathroom remodel in Owatonna, MN?",
-      answer:
-        "Most bathroom remodeling projects require permits. Our team handles all permitting processes to ensure compliance with Owatonna, MN, building codes.",
-    },
+    // {
+    //   question: "Do I need permits for a bathroom remodel in Metro Detroit, MI?",
+    //   answer:
+    //     "Most bathroom remodeling projects require permits. Our team handles all permitting processes to ensure compliance with Metro Detroit, MI, building codes.",
+    // },
   ];
 
   return (
@@ -457,118 +398,214 @@ export default function HomePage() {
       {/* Main Content */}
       <main>
         {/* Hero Section */}
-        <section
-          className="relative bg-gradient-to-r from-blue-800 to-blue-600 overflow-hidden"
-          aria-labelledby="hero-heading"
-        >
-          <div className="absolute inset-0 overflow-hidden opacity-20">
-            <div className="absolute inset-0 bg-pattern-grid z-0"></div>
-          </div>
+        <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 py-20 md:py-32 z-10 overflow-hidden">
+      {/* Google Fonts */}
+      <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+          rel="stylesheet"
+        />
+      
 
-          <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="text-white">
-                <h1
-                  id="hero-heading"
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-                >
-                  Transform Your Bathroom in Owatonna, MN <br className="hidden md:block" />
-                  <span className="text-blue-200">Into a Luxurious Stone Retreat</span>
-                </h1>
-                <p className="text-lg md:text-xl mb-8 text-blue-100">
-                  Expert stone bathroom remodeling services tailored to your style and budget in
-                  Owatonna, MN. Quality craftsmanship with a satisfaction guarantee.
-                </p>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Stone Works Remodeling",
+              "url": "https://stoneworkremodeling.com",
+              "logo": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/logo.webp",
+              "telephone": "+12483468926",
+              "email": "info@stoneworkremodeling.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4671 Sugar Camp Road",
+                "addressLocality": "Metro Detroit",
+                "addressRegion": "MN",
+                "postalCode": "55060",
+                "addressCountry": "US",
+              },
+              "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-14:00"],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "500",
+              },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "LocalBusiness",
+                "name": "Stone Works Remodeling",
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Anonymous",
+              },
+              "reviewBody": "Over 500 satisfied customers for stone bathroom remodeling in Metro Detroit, MI.",
+            },
+          ]),
+        }}
+      />
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                  <Link
-                    href="/contact"
-                    className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center group"
-                  >
-                    Get Your Free Quote
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  <Link
-                    href="tel:+12483468926"
-                    className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 flex items-center justify-center"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    (248) 346-8926
-                  </Link>
-                </div>
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 z-0 opacity-10">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      </div>
 
-                <div className="flex items-center space-x-4" aria-label="Customer testimonials">
-                  <div className="flex -space-x-2">
-                    {customerImages.map((image) => (
-                      <div
-                        key={image.src}
-                        className="w-10 h-10 rounded-full border-2 border-white bg-blue-300 overflow-hidden relative"
-                      >
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          width={40}
-                          height={40}
-                          className="object-cover"
-                          sizes="40px"
-                          placeholder="blur"
-                          blurDataURL={image.blurDataURL}
-                          loading="lazy"
-                          quality={75}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      {[1, 2, 3, 4, 5].map((n) => (
-                        <Star key={n} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-                      ))}
-                    </div>
-                    <p className="text-blue-100 text-sm mt-1">Over 500+ satisfied customers</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative hidden lg:block">
-                <div className="bg-white p-1 rounded-lg shadow-2xl transform rotate-1 w-full">
-                  <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
-                    alt="Modern stone bathroom remodel by Stone Work Remodeling in Owatonna, MN"
-                    width={500}
-                    height={300}
-                    className="w-full h-auto rounded-md object-cover"
-                    sizes="(max-width: 1024px) 100vw, 500px"
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
-                    quality={85}
-                    priority
-                  />
-                </div>
-                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl transform -rotate-3 w-48">
-                  <div className="flex items-center mb-2">
-                    <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span className="font-semibold text-gray-900">Completed in 5 days</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span className="font-semibold text-gray-900">Under budget</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute bottom-6 left-0 right-0 flex justify-center">
-            <a
-              href="#services"
-              className="flex flex-col items-center text-white opacity-80 hover:opacity-100 transition-opacity"
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <motion.div
+            className="text-white"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1
+              id="hero-heading"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight font-['Playfair_Display']"
             >
-              <span className="text-sm font-medium mb-2">Explore Our Services</span>
-              <ArrowDown className="h-5 w-5 animate-bounce" />
-            </a>
-          </div>
-        </section>
+              Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
+              <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
+                Into a Luxurious Stone Retreat
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-2xl">
+              Discover expert stone bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
+              stone craftsmanship, and a satisfaction guarantee for your dream bathroom.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center group transform hover:-translate-y-1"
+                aria-label="Get a free quote for stone bathroom remodeling in Metro Detroit, MI"
+              >
+                Get Your Free Quote
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="tel:+12483468926"
+                className="border-2 border-blue-200 text-blue-200 hover:bg-blue-200/10 hover:border-blue-300 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 flex items-center justify-center transform hover:-translate-y-1"
+                aria-label="Call Stone Works Remodeling at (248) 346-8926 for bathroom remodeling"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                +1(248) 346-8926
+              </Link>
+            </div>
+
+            <motion.div
+              className="flex items-center space-x-6"
+              aria-label="Customer testimonials for Stone Works Remodeling"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="flex -space-x-3">
+                {customerImages.map((image, index) => (
+                  <motion.div
+                    key={image.src}
+                    className="w-12 h-12 rounded-full border-2 border-white bg-blue-300 overflow-hidden relative"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={48}
+                      height={48}
+                      className="object-cover"
+                      sizes="48px"
+                      placeholder="blur"
+                      blurDataURL={image.blurDataURL}
+                      loading="lazy"
+                      quality={75}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+              <div>
+                <div className="flex items-center mb-1">
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <Star
+                      key={n}
+                      className="h-6 w-6 text-yellow-400 fill-yellow-400"
+                      aria-hidden="true"
+                    />
+                  ))}
+                </div>
+                <p className="text-blue-100 text-base font-medium">
+                  Over 200+ Satisfied Customers in Metro Detroit, MI
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Image Section */}
+          <motion.div
+            className="relative hidden lg:block"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            {/* Main Hero Image */}
+            <div className="relative bg-white p-2 rounded-xl shadow-2xl transform rotate-2 max-w-[600px] mx-auto">
+              <Image
+                src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
+                alt="Luxurious stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg object-cover"
+                sizes="(max-width: 1024px) 100vw, 600px"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
+                quality={85}
+                priority
+              />
+              {/* Decorative Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+            </div>
+
+            {/* Project Highlights Card */}
+            <motion.div
+              className="absolute -bottom-8 -left-8 bg-white p-5 rounded-xl shadow-xl transform -rotate-4 w-64"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <div className="flex items-center mb-3">
+                <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
+                <span className="font-semibold text-gray-900 text-lg">Completed in 10 Days</span>
+              </div>
+              <div className="flex items-center">
+                <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
+                <span className="font-semibold text-gray-900 text-lg">Under Budget</span>
+              </div>
+            </motion.div>
+
+            {/* Secondary Badge */}
+            <motion.div
+              className="absolute top-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg transform rotate-6"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <span className="text-sm font-bold">Award-Winning Design</span>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
 
         {/* Trust Indicators */}
         <section className="py-6 bg-gray-50 border-b border-gray-100" aria-label="Trust indicators">
@@ -576,11 +613,11 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <div className="flex items-center">
                 <Shield className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-700 font-medium">Licensed & Insured</span>
+                <span className="text-gray-700 font-medium">Insured & Engineer certified</span>
               </div>
               <div className="flex items-center">
                 <Award className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-700 font-medium">20+ Years Experience</span>
+                <span className="text-gray-700 font-medium">10+ Years Experience</span>
               </div>
               <div className="flex items-center">
                 <ThumbsUp className="h-6 w-6 text-blue-600 mr-2" />
@@ -599,11 +636,11 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Premium Stone Bathroom Services in Owatonna, MN
+                Premium Stone Bathroom Services in Metro Detroit, MI
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From complete stone bathroom remodels to walk-in tubs, our expert team delivers
-                exceptional results in Owatonna, MN.
+                exceptional results in Metro Detroit, MI.
               </p>
             </div>
 
@@ -613,7 +650,7 @@ export default function HomePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
-                    alt="Complete stone bathroom remodeling by Stone Work Remodeling in Owatonna, MN"
+                    alt="Complete stone bathroom remodeling by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -631,7 +668,7 @@ export default function HomePage() {
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
                     Transform your bathroom with our comprehensive stone remodeling services in
-                    Owatonna, MN, featuring custom stone tiles and fixtures.
+                    Metro Detroit, MI, featuring custom stone tiles and fixtures.
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-gray-700">
@@ -662,7 +699,7 @@ export default function HomePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/_QE_wu8yh888nrX1JUzYt.webp"
-                    alt="Stone tub replacement by Stone Work Remodeling in Owatonna, MN"
+                    alt="Free-Standing Tub by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -674,12 +711,12 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">
-                    Stone Tub Replacement
+                    Free-Standing Tub
                   </h3>
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Upgrade your bathtub with a modern stone replacement in Owatonna, MN, enhancing
+                    Upgrade your bathtub with a modern stone replacement in Metro Detroit, MI, enhancing
                     both style and functionality.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -711,7 +748,7 @@ export default function HomePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/2gOE7M5Mw4F9ecfLC92pQ.webp"
-                    alt="Stone shower conversion by Stone Work Remodeling in Owatonna, MN"
+                    alt="Walk-in Shower by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -723,12 +760,12 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">
-                    Stone Shower Conversion
+                  Walk-in Shower
                   </h3>
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Convert your tub into a spacious stone shower in Owatonna, MN, with custom
+                    Convert your tub into a spacious stone shower in Metro Detroit, MI, with custom
                     designs and safety features.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -760,7 +797,7 @@ export default function HomePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp"
-                    alt="Accessible walk-in tub by Stone Work Remodeling in Owatonna, MN"
+                    alt="Accessible Shower-tub combo by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -772,12 +809,12 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">
-                    Walk-in Tubs
+                  Shower-tub combo
                   </h3>
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Enhance bathroom safety with premium walk-in tubs in Owatonna, MN, designed for
+                    Enhance bathroom safety with premium Shower-tub combo in Metro Detroit, MI, designed for
                     comfort and accessibility.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -825,7 +862,7 @@ export default function HomePage() {
                 Our Simple 4-Step Stone Remodeling Process
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We make your stone bathroom transformation in Owatonna, MN, smooth and stress-free.
+                We make your stone bathroom transformation in Metro Detroit, MI, smooth and stress-free.
               </p>
             </div>
 
@@ -837,7 +874,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Free Consultation</h3>
                   <p className="text-gray-600">
-                    Schedule a free in-home consultation in Owatonna, MN, to discuss your stone
+                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your stone
                     bathroom vision.
                   </p>
                 </div>
@@ -852,7 +889,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Personalized Stone Design</h3>
                   <p className="text-gray-600">
                     Our designers create a custom stone bathroom plan with 3D renderings for your
-                    Owatonna home.
+                    Metro Detroit,MI home.
                   </p>
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full h-1 w-24 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
@@ -865,8 +902,8 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Stone Installation</h3>
                   <p className="text-gray-600">
-                    Our licensed professionals install your stone bathroom with precision in Owatonna,
-                    MN.
+                    Our licensed professionals install your stone bathroom with precision in Metro Detroit,
+                    MI.
                   </p>
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full h-1 w-24 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
@@ -879,7 +916,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Final Walkthrough</h3>
                   <p className="text-gray-600">
-                    We ensure your new stone bathroom in Owatonna, MN, meets your expectations with a
+                    We ensure your new stone bathroom in Metro Detroit, MI, meets your expectations with a
                     detailed walkthrough.
                   </p>
                 </div>
@@ -903,10 +940,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 id="gallery-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Stone Bathroom Transformations in Owatonna, MN
+                Our Stone Bathroom Transformations in Metro Detroit, MI
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore real stone bathroom projects showcasing our craftsmanship in Owatonna, MN.
+                Explore real stone bathroom projects showcasing our craftsmanship in Metro Detroit, MI.
               </p>
             </div>
 
@@ -942,19 +979,19 @@ export default function HomePage() {
                     before: beforeAfterImages[0],
                     after: beforeAfterImages[1],
                     title: "Master Stone Bathroom Renovation",
-                    desc: "Complete stone remodel with custom shower and premium tiles in Owatonna, MN",
+                    desc: "Complete stone remodel with custom shower and premium tiles in Metro Detroit, MI",
                   },
                   {
                     before: beforeAfterImages[2],
                     after: beforeAfterImages[3],
-                    title: "Stone Shower Conversion",
-                    desc: "Tub-to-shower conversion with stone finishes and non-slip flooring in Owatonna, MN",
+                    title: "Tub-to-shower",
+                    desc: "Tub-to-shower conversion with stone finishes and non-slip flooring in Metro Detroit, MI",
                   },
                   {
                     before: beforeAfterImages[4],
                     after: beforeAfterImages[5],
-                    title: "Accessible Walk-in Tub",
-                    desc: "Stone walk-in tub with therapeutic jets and safety features in Owatonna, MN",
+                    title: "Free standing tub",
+                    desc: "Stone walk-in tub with therapeutic jets and safety features in Metro Detroit, MI",
                   },
                 ].map((item, index) => (
                   <div
@@ -1051,10 +1088,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What Owatonna Customers Say
+                What Customer in Metro Detroit Say
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Hear from homeowners in Owatonna, MN, who transformed their bathrooms with Stone Work
+                Hear from homeowners in Metro Detroit, MI, who transformed their bathrooms with Stone Works
                 Remodeling.
               </p>
             </div>
@@ -1133,7 +1170,7 @@ export default function HomePage() {
                 Stone Bathroom Remodeling FAQs
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Answers to common questions about stone bathroom remodeling in Owatonna, MN.
+                Answers to common questions about stone bathroom remodeling in Metro Detroit, MI.
               </p>
             </div>
 
@@ -1181,11 +1218,11 @@ export default function HomePage() {
         >
           <div className="container mx-auto px-4 text-center">
             <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold mb-6">
-              Ready for Your Stone Bathroom in Owatonna, MN?
+              Ready for Your Stone Bathroom in Metro Detroit, MI?
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Schedule your free consultation today and start your journey to a luxurious stone
-              bathroom with Stone Work Remodeling.
+              bathroom with Stone Works Remodeling.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
@@ -1207,7 +1244,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

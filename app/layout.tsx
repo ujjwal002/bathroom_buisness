@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Experts | [Your City]",
+  title: "Bathroom Remodeling Experts | Metro Detroit, MI]",
   description: "Transform your bathroom with our expert remodeling services. Free quotes!",
-  keywords: ["bathroom remodeling", "shower installation", "[Your City] bathroom renovation"],
+  keywords: ["bathroom remodeling", "shower installation", "Metro Detroit, MI bathroom renovation"],
 };
 
 export default function RootLayout({
