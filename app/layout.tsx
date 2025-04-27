@@ -29,7 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
+      <head>
+        {/* Preload Playfair font */}
+        <link
+          rel="preload"
+          href="/fonts/PlayfairDisplay-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
