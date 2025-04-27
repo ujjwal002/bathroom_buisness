@@ -400,10 +400,8 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 py-20 md:py-32 z-10 overflow-hidden">
       {/* Google Fonts */}
-      <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-          rel="stylesheet"
-        />
+      <link rel="preload" href="/fonts/PlayfairDisplay-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
+
       
 
       {/* Structured Data */}
@@ -569,7 +567,7 @@ export default function HomePage() {
                 sizes="(max-width: 1024px) 100vw, 600px"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
-                quality={85}
+                quality={75}
                 priority
               />
               {/* Decorative Overlay */}
