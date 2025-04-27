@@ -400,7 +400,6 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 py-20 md:py-32 z-10 overflow-hidden">
       {/* Google Fonts */}
-      <link rel="preload" href="/fonts/PlayfairDisplay-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
 
       
 
