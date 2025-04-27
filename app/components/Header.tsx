@@ -3,16 +3,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, ChevronDown, Menu, X, Mail, Clock, ShowerHead, Droplets, Bath, Accessibility } from "lucide-react";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
-
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("/");
   const pathname = usePathname();
-
 
   // Handle scroll effect
   useEffect(() => {
@@ -24,17 +21,25 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Set active link based on pathname
+  // Close mobile menu and services dropdown when route changes
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setActiveLink(window.location.pathname);
-    }
-  }, []);
+    setMobileMenuOpen(false);
+    setServicesDropdownOpen(false);
+  }, [pathname]);
+
+  // Helper function to determine if a link is active
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    if (path === "/services") return pathname.startsWith("/services");
+    if (path === "/blog") return pathname.startsWith("/blog");
+    return pathname === path;
+  };
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/98 backdrop-blur-sm shadow-lg py-1" : "bg-white/95"
-        }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        isScrolled ? "bg-white/98 backdrop-blur-sm shadow-lg py-1" : "bg-white/95"
+      }`}
     >
       {/* Structured Data */}
       <script
@@ -133,12 +138,7 @@ export default function Header() {
         {/* Main Navigation */}
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center group"
-            aria-label="Stone Works Remodeling Home"
-            onClick={() => setActiveLink("/")}
-          >
+          <Link href="/" className="flex items-center group" aria-label="Stone Works Remodeling Home">
             <div className="flex items-center gap-4 group hover:scale-105 transition-transform duration-300">
               <div className="w-16 h-16 rounded-full overflow-hidden shadow-md border border-gray-200">
                 <Image
@@ -167,11 +167,11 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-1">
             <Link
               href="/"
-              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${activeLink === "/"
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+                isActive("/")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
-                }`}
-              onClick={() => setActiveLink("/")}
+              }`}
             >
               Home
             </Link>
@@ -179,10 +179,11 @@ export default function Header() {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className={`flex items-center px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 ${activeLink.includes("/services")
+                className={`flex items-center px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 ${
+                  isActive("/services")
                     ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 group-hover:bg-blue-50"
                     : "group-hover:text-blue-600 after:bg-blue-600 group-hover:bg-gray-50"
-                  }`}
+                }`}
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 aria-expanded={servicesDropdownOpen}
                 aria-controls="services-dropdown"
@@ -202,7 +203,7 @@ export default function Header() {
                   <Link
                     href="/services"
                     className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
-                    onClick={() => setActiveLink("/services")}
+                    onClick={() => setServicesDropdownOpen(false)}
                   >
                     <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
                       <ShowerHead className="h-5 w-5 text-blue-600" />
@@ -217,7 +218,7 @@ export default function Header() {
                   <Link
                     href="/services"
                     className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
-                    onClick={() => setActiveLink("/services/shower-conversion")}
+                    onClick={() => setServicesDropdownOpen(false)}
                   >
                     <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
                       <Droplets className="h-5 w-5 text-blue-600" />
@@ -232,7 +233,7 @@ export default function Header() {
                   <Link
                     href="/services"
                     className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
-                    onClick={() => setActiveLink("/services/walk-in-tubs")}
+                    onClick={() => setServicesDropdownOpen(false)}
                   >
                     <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
                       <Accessibility className="h-5 w-5 text-blue-600" />
@@ -247,7 +248,7 @@ export default function Header() {
                   <Link
                     href="/services"
                     className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors"
-                    onClick={() => setActiveLink("/services/custom-stonework")}
+                    onClick={() => setServicesDropdownOpen(false)}
                   >
                     <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
                       <Bath className="h-5 w-5 text-blue-600" />
@@ -264,7 +265,7 @@ export default function Header() {
                   <Link
                     href="/services"
                     className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center"
-                    onClick={() => setActiveLink("/services")}
+                    onClick={() => setServicesDropdownOpen(false)}
                   >
                     View all services
                     <svg className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -281,40 +282,41 @@ export default function Header() {
 
             <Link
               href="/gallery"
-              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${activeLink === "/gallery"
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+                isActive("/gallery")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
-                }`}
-              onClick={() => setActiveLink("/gallery")}
+              }`}
             >
               Gallery
             </Link>
             <Link
               href="/about"
-              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${activeLink === "/about"
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+                isActive("/about")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
-                }`}
-              onClick={() => setActiveLink("/about")}
+              }`}
             >
               About Us
             </Link>
             <Link
               href="/blog"
-              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${(pathname ?? "").startsWith("/blog")
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+                isActive("/blog")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
-                }`}
+              }`}
             >
               Blog
             </Link>
             <Link
               href="/contact"
-              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${activeLink === "/contact"
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+                isActive("/contact")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
-                }`}
-              onClick={() => setActiveLink("/contact")}
+              }`}
             >
               Contact
             </Link>
@@ -344,17 +346,16 @@ export default function Header() {
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden bg-white py-3 px-4 shadow-lg transform transition-all duration-300 ease-in-out ${mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
-          } ${mobileMenuOpen ? "block" : "hidden"}`}
+        className={`md:hidden bg-white py-3 px-4 shadow-lg transform transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+        } ${mobileMenuOpen ? "block" : "hidden"}`}
       >
         <Link
           href="/"
-          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink === "/" ? "text-blue-600 font-medium" : ""
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setActiveLink("/");
-          }}
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/") ? "text-blue-600 font-medium" : ""
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
         >
           Home
         </Link>
@@ -363,8 +364,9 @@ export default function Header() {
         <div>
           <button
             onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-            className={`flex items-center justify-between w-full py-3 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink.includes("/services") ? "text-blue-600 font-medium" : "text-gray-800"
-              }`}
+            className={`flex items-center justify-between w-full py-3 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+              isActive("/services") ? "text-blue-600 font-medium" : "text-gray-800"
+            }`}
             aria-expanded={servicesDropdownOpen}
             aria-controls="mobile-services-dropdown"
           >
@@ -375,17 +377,16 @@ export default function Header() {
           </button>
           <div
             id="mobile-services-dropdown"
-            className={`py-1 bg-gray-50 rounded-md mb-2 overflow-hidden transition-all duration-300 ${servicesDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-              }`}
+            className={`py-1 bg-gray-50 rounded-md mb-2 overflow-hidden transition-all duration-300 ${
+              servicesDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            }`}
           >
             <Link
               href="/services/bathroom-remodeling"
-              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${activeLink === "/services/bathroom-remodeling" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
-                }`}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setActiveLink("/services/bathroom-remodeling");
-              }}
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
+                pathname === "/services/bathroom-remodeling" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
             >
               <div className="p-1 rounded-full bg-blue-100 mr-3">
                 <ShowerHead className="h-4 w-4 text-blue-600" />
@@ -394,12 +395,10 @@ export default function Header() {
             </Link>
             <Link
               href="/services/shower-conversion"
-              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${activeLink === "/services/shower-conversion" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
-                }`}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setActiveLink("/services/shower-conversion");
-              }}
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
+                pathname === "/services/shower-conversion" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
             >
               <div className="p-1 rounded-full bg-blue-100 mr-3">
                 <Droplets className="h-4 w-4 text-blue-600" />
@@ -408,12 +407,10 @@ export default function Header() {
             </Link>
             <Link
               href="/services/walk-in-tubs"
-              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${activeLink === "/services/walk-in-tubs" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
-                }`}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setActiveLink("/services/walk-in-tubs");
-              }}
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
+                pathname === "/services/walk-in-tubs" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
             >
               <div className="p-1 rounded-full bg-blue-100 mr-3">
                 <Accessibility className="h-4 w-4 text-blue-600" />
@@ -422,12 +419,10 @@ export default function Header() {
             </Link>
             <Link
               href="/services/custom-stonework"
-              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${activeLink === "/services/custom-stonework" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
-                }`}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setActiveLink("/services/custom-stonework");
-              }}
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
+                pathname === "/services/custom-stonework" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
             >
               <div className="p-1 rounded-full bg-blue-100 mr-3">
                 <Bath className="h-4 w-4 text-blue-600" />
@@ -438,10 +433,7 @@ export default function Header() {
               <Link
                 href="/services"
                 className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  setActiveLink("/services");
-                }}
+                onClick={() => setMobileMenuOpen(false)}
               >
                 View all services
                 <svg className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -458,45 +450,37 @@ export default function Header() {
 
         <Link
           href="/gallery"
-          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink === "/gallery" ? "text-blue-600 font-medium" : ""
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setActiveLink("/gallery");
-          }}
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/gallery") ? "text-blue-600 font-medium" : ""
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
         >
           Gallery
         </Link>
         <Link
           href="/about"
-          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink === "/about" ? "text-blue-600 font-medium" : ""
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setActiveLink("/about");
-          }}
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/about") ? "text-blue-600 font-medium" : ""
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
         >
           About Us
         </Link>
         <Link
-          href="/blogs"
-          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink === "/blog" ? "text-blue-600 font-medium" : ""
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setActiveLink("/blog");
-          }}
+          href="/blog"
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/blog") ? "text-blue-600 font-medium" : ""
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
         >
           Blog
         </Link>
         <Link
           href="/contact"
-          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${activeLink === "/contact" ? "text-blue-600 font-medium" : ""
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setActiveLink("/contact");
-          }}
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/contact") ? "text-blue-600 font-medium" : ""
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
         >
           Contact
         </Link>

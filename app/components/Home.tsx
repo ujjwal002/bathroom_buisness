@@ -469,7 +469,7 @@ export default function HomePage() {
               >
                 <h1
                   id="hero-heading"
-                  className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight font-['Playfair_Display']"
+                  className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight "
                 >
                   Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
                   <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
