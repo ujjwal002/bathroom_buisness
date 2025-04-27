@@ -278,7 +278,7 @@ export default function HomePage() {
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
     },
   ];
-  
+
 
   // Gallery images with optimized metadata
   interface GalleryImage {
@@ -399,210 +399,211 @@ export default function HomePage() {
       <main>
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 py-20 md:py-32 z-10 overflow-hidden">
-      {/* Google Fonts */}
+          {/* Google Fonts */}
 
-      
 
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Stone Works Remodeling",
-              "url": "https://stoneworkremodeling.com",
-              "logo": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/logo.webp",
-              "telephone": "+12483468926",
-              "email": "info@stoneworkremodeling.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4671 Sugar Camp Road",
-                "addressLocality": "Metro Detroit",
-                "addressRegion": "MN",
-                "postalCode": "55060",
-                "addressCountry": "US",
-              },
-              "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-14:00"],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5",
-                "reviewCount": "500",
-              },
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Review",
-              "itemReviewed": {
-                "@type": "LocalBusiness",
-                "name": "Stone Works Remodeling",
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Anonymous",
-              },
-              "reviewBody": "Over 500 satisfied customers for stone bathroom remodeling in Metro Detroit, MI.",
-            },
-          ]),
-        }}
-      />
 
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-      </div>
+          {/* Structured Data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([
+                {
+                  "@context": "https://schema.org",
+                  "@type": "LocalBusiness",
+                  "name": "Stone Works Remodeling",
+                  "url": "https://stoneworkremodeling.com",
+                  "logo": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/logo.webp",
+                  "telephone": "+12483468926",
+                  "email": "info@stoneworkremodeling.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "4671 Sugar Camp Road",
+                    "addressLocality": "Metro Detroit",
+                    "addressRegion": "MN",
+                    "postalCode": "55060",
+                    "addressCountry": "US",
+                  },
+                  "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-14:00"],
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "500",
+                  },
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Review",
+                  "itemReviewed": {
+                    "@type": "LocalBusiness",
+                    "name": "Stone Works Remodeling",
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Anonymous",
+                  },
+                  "reviewBody": "Over 500 satisfied customers for stone bathroom remodeling in Metro Detroit, MI.",
+                },
+              ]),
+            }}
+          />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <motion.div
-            className="text-white"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <h1
-              id="hero-heading"
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight font-['Playfair_Display']"
-            >
-              Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
-              <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
-                Into a Luxurious Stone Retreat
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-2xl">
-              Discover expert stone bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
-              stone craftsmanship, and a satisfaction guarantee for your dream bathroom.
-            </p>
+          {/* Background Decorative Elements */}
+          <div className="absolute inset-0 z-0 opacity-10">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link
-                href="/contact"
-                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center group transform hover:-translate-y-1"
-                aria-label="Get a free quote for stone bathroom remodeling in Metro Detroit, MI"
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Text Content */}
+              <motion.div
+                className="text-white"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
               >
-                Get Your Free Quote
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                href="tel:+12483468926"
-                className="border-2 border-blue-200 text-blue-200 hover:bg-blue-200/10 hover:border-blue-300 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 flex items-center justify-center transform hover:-translate-y-1"
-                aria-label="Call Stone Works Remodeling at (248) 346-8926 for bathroom remodeling"
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                +1(248) 346-8926
-              </Link>
-            </div>
-
-            <motion.div
-              className="flex items-center space-x-6"
-              aria-label="Customer testimonials for Stone Works Remodeling"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <div className="flex -space-x-3">
-                {customerImages.map((image, index) => (
-                  <motion.div
-                    key={image.src}
-                    className="w-12 h-12 rounded-full border-2 border-white bg-blue-300 overflow-hidden relative"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={48}
-                      height={48}
-                      className="object-cover"
-                      sizes="48px"
-                      placeholder="blur"
-                      blurDataURL={image.blurDataURL}
-                      loading="lazy"
-                      quality={75}
-                    />
-                  </motion.div>
-                ))}
-              </div>
-              <div>
-                <div className="flex items-center mb-1">
-                  {[1, 2, 3, 4, 5].map((n) => (
-                    <Star
-                      key={n}
-                      className="h-6 w-6 text-yellow-400 fill-yellow-400"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </div>
-                <p className="text-blue-100 text-base font-medium">
-                  Over 200+ Satisfied Customers in Metro Detroit, MI
+                <h1
+                  id="hero-heading"
+                  className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight font-['Playfair_Display']"
+                >
+                  Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
+                  <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
+                    Into a Luxurious Stone Retreat
+                  </span>
+                </h1>
+                <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-2xl">
+                  Discover expert stone bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
+                  stone craftsmanship, and a satisfaction guarantee for your dream bathroom.
                 </p>
-              </div>
-            </motion.div>
-          </motion.div>
 
-          {/* Image Section */}
-          <motion.div
-            className="relative hidden lg:block"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            {/* Main Hero Image */}
-            <div className="relative bg-white p-2 rounded-xl shadow-2xl transform rotate-2 max-w-[600px] mx-auto">
-              <Image
-                src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
-                alt="Luxurious stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
-                width={600}
-                height={400}
-                className="w-full h-auto rounded-lg object-cover"
-                sizes="(max-width: 1024px) 100vw, 600px"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
-                quality={75}
-                priority
-              />
-              {/* Decorative Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                  <Link
+                    href="/contact"
+                    className="bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center group transform hover:-translate-y-1"
+                    aria-label="Get a free quote for stone bathroom remodeling in Metro Detroit, MI"
+                  >
+                    Get Your Free Quote
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <Link
+                    href="tel:+12483468926"
+                    className="border-2 border-blue-200 text-blue-200 hover:bg-blue-200/10 hover:border-blue-300 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 flex items-center justify-center transform hover:-translate-y-1"
+                    aria-label="Call Stone Works Remodeling at (248) 346-8926 for bathroom remodeling"
+                  >
+                    <Phone className="mr-2 h-5 w-5" />
+                    +1(248) 346-8926
+                  </Link>
+                </div>
+
+                <motion.div
+                  className="flex items-center space-x-6"
+                  aria-label="Customer testimonials for Stone Works Remodeling"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                  <div className="flex -space-x-3">
+                    {customerImages.map((image, index) => (
+                      <motion.div
+                        key={image.src}
+                        className="w-12 h-12 rounded-full border-2 border-white bg-blue-300 overflow-hidden relative"
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                      >
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          width={48}
+                          height={48}
+                          className="object-cover"
+                          sizes="48px"
+                          placeholder="blur"
+                          blurDataURL={image.blurDataURL}
+                          loading="lazy"
+                          quality={75}
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                  <div>
+                    <div className="flex items-center mb-1">
+                      {[1, 2, 3, 4, 5].map((n) => (
+                        <Star
+                          key={n}
+                          className="h-6 w-6 text-yellow-400 fill-yellow-400"
+                          aria-hidden="true"
+                        />
+                      ))}
+                    </div>
+                    <p className="text-blue-100 text-base font-medium">
+                      Over 200+ Satisfied Customers in Metro Detroit, MI
+                    </p>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              {/* Image Section */}
+              <motion.div
+                className="relative hidden lg:block"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                {/* Main Hero Image */}
+                <div className="relative bg-white p-2 rounded-xl shadow-2xl transform rotate-2 max-w-[600px] mx-auto">
+                  <Image
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
+                    alt="Luxurious stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-lg object-cover"
+                    sizes="(max-width: 1024px) 100vw, 600px"
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
+                    quality={75}
+                    loading="lazy"  // Ensures lazy loading of offscreen images
+                    priority={false}  // Set priority to false for offscreen images
+                  />
+                  {/* Decorative Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+
+                {/* Project Highlights Card */}
+                <motion.div
+                  className="absolute -bottom-8 -left-8 bg-white p-5 rounded-xl shadow-xl transform -rotate-4 w-64"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                >
+                  <div className="flex items-center mb-3">
+                    <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900 text-lg">Completed in 10 Days</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
+                    <span className="font-semibold text-gray-900 text-lg">Under Budget</span>
+                  </div>
+                </motion.div>
+
+                {/* Secondary Badge */}
+                <motion.div
+                  className="absolute top-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg transform rotate-6"
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                >
+                  <span className="text-sm font-bold">Award-Winning Design</span>
+                </motion.div>
+              </motion.div>
             </div>
-
-            {/* Project Highlights Card */}
-            <motion.div
-              className="absolute -bottom-8 -left-8 bg-white p-5 rounded-xl shadow-xl transform -rotate-4 w-64"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <div className="flex items-center mb-3">
-                <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
-                <span className="font-semibold text-gray-900 text-lg">Completed in 10 Days</span>
-              </div>
-              <div className="flex items-center">
-                <Check className="h-6 w-6 text-green-500 mr-2" aria-hidden="true" />
-                <span className="font-semibold text-gray-900 text-lg">Under Budget</span>
-              </div>
-            </motion.div>
-
-            {/* Secondary Badge */}
-            <motion.div
-              className="absolute top-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg transform rotate-6"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <span className="text-sm font-bold">Award-Winning Design</span>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+          </div>
+        </section>
 
         {/* Trust Indicators */}
         <section className="py-6 bg-gray-50 border-b border-gray-100" aria-label="Trust indicators">
@@ -757,7 +758,7 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">
-                  Walk-in Shower
+                    Walk-in Shower
                   </h3>
                 </div>
                 <div className="p-6">
@@ -806,7 +807,7 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 text-white text-xl font-bold">
-                  Shower-tub combo
+                    Shower-tub combo
                   </h3>
                 </div>
                 <div className="p-6">
@@ -947,21 +948,19 @@ export default function HomePage() {
             <div className="flex justify-center mb-8">
               <div className="inline-flex bg-gray-100 rounded-lg p-1">
                 <button
-                  className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
-                    activeTab === "before-after"
+                  className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === "before-after"
                       ? "bg-white text-blue-600 shadow-sm"
                       : "text-gray-600 hover:text-gray-900"
-                  }`}
+                    }`}
                   onClick={() => setActiveTab("before-after")}
                 >
                   Before & After
                 </button>
                 <button
-                  className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
-                    activeTab === "recent-projects"
+                  className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === "recent-projects"
                       ? "bg-white text-blue-600 shadow-sm"
                       : "text-gray-600 hover:text-gray-900"
-                  }`}
+                    }`}
                   onClick={() => setActiveTab("recent-projects")}
                 >
                   Recent Projects
@@ -1098,9 +1097,8 @@ export default function HomePage() {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={testimonial.id}
-                    className={`bg-white rounded-lg shadow-md p-8 transition-all duration-300 ${
-                      activeTestimonial === index ? "border-2 border-blue-600 scale-105" : "opacity-80"
-                    }`}
+                    className={`bg-white rounded-lg shadow-md p-8 transition-all duration-300 ${activeTestimonial === index ? "border-2 border-blue-600 scale-105" : "opacity-80"
+                      }`}
                     role="article"
                     aria-label={`Testimonial from ${testimonial.name}`}
                   >
@@ -1137,9 +1135,8 @@ export default function HomePage() {
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
-                    className={`h-3 w-3 rounded-full ${
-                      activeTestimonial === index ? "bg-blue-600" : "bg-gray-300"
-                    }`}
+                    className={`h-3 w-3 rounded-full ${activeTestimonial === index ? "bg-blue-600" : "bg-gray-300"
+                      }`}
                     onClick={() => setActiveTestimonial(index)}
                     aria-label={`View testimonial ${index + 1}`}
                   />
@@ -1182,9 +1179,8 @@ export default function HomePage() {
                   >
                     <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
                     <ChevronRight
-                      className={`h-5 w-5 text-gray-600 transform transition-transform ${
-                        activeTab === `faq-${index}` ? "rotate-90" : ""
-                      }`}
+                      className={`h-5 w-5 text-gray-600 transform transition-transform ${activeTab === `faq-${index}` ? "rotate-90" : ""
+                        }`}
                     />
                   </button>
                   {activeTab === `faq-${index}` && (
