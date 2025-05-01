@@ -2,18 +2,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Quote } from "lucide-react";
+import {  Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Head from "next/head";
 
 // Interfaces
-interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  bio: string;
-  image: string;
-}
+
 
 interface CustomerImage {
   src: string;
@@ -149,36 +143,7 @@ function SEOMetadata() {
 
 export default function AboutPage() {
   // Team data
-  const teamMembers: TeamMember[] = [
-    {
-      id: 1,
-      name: "John Doe",
-      role: "Founder & CEO",
-      bio: "With over 20 years in the remodeling industry, John drives Stone Works Remodeling’s vision for quality and innovation.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      role: "Lead Designer",
-      bio: "Jane’s creative expertise transforms bathrooms into elegant, functional spaces tailored to each client’s vision.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-    },
-    {
-      id: 3,
-      name: "Mike Johnson",
-      role: "Project Manager",
-      bio: "Mike oversees every project with precision, ensuring timely delivery and impeccable craftsmanship.",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
-    },
-    {
-      id: 4,
-      name: "Emily Davis",
-      role: "Customer Experience Manager",
-      bio: "Emily ensures every client enjoys a seamless and personalized remodeling experience.",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
-    },
-  ];
+
 
   // Customer images
   const customerImages: CustomerImage[] = [
