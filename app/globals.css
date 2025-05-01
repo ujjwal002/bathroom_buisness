@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -17,7 +17,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 @font-face {
   font-family: 'Playfair Display';
@@ -27,11 +27,11 @@
   font-display: swap;
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .prose {
   max-width: 65ch;
@@ -676,5 +676,151 @@ body {
     width: 2rem;
     height: 2rem;
     font-size: 0.9rem;
+  }
+}
+
+
+/* Trends-Specific Styles */
+.trend-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #eff6ff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+  width: fit-content;
+  font-weight: 500;
+  color: #1e40af;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.trend-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-top: 3px solid #3b82f6;
+}
+
+.trend-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.trend-stat {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.tech-spotlight {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.tech-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.tech-item img {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stone-trends {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stone-trend img {
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.bio-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.bio-card {
+  background: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #10b981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.color-trends {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.palette {
+  text-align: center;
+}
+
+.color-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trend-cta {
+  background: linear-gradient(to right, #eff6ff, #f8fafc);
+}
+
+.trend-outlook {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tech-comparison {
+    grid-template-columns: 1fr;
+  }
+  
+  .color-box {
+    width: 60px;
+    height: 60px;
   }
 }

@@ -14,14 +14,14 @@ const DynamicGalleryImage = dynamic(() => import("next/image"), { ssr: false });
 function SEOMetadata() {
   return (
     <>
-      <title>Stone Works Remodeling | Premium Stone Bathroom Remodeling in Metro Detroit, MI</title>
+      <title>Stone Works Remodeling | Premium Bathroom Remodeling in Metro Detroit, MI</title>
       <meta
         name="description"
-        content="Stone Works Remodeling specializes in premium stone bathroom remodeling, shower conversions, walk-in tubs, and custom designs in Metro Detroit, MI. Free quotes and financing available!"
+        content="Stone Works Remodeling specializes in premium bathroom remodeling, shower conversions, walk-in tubs, and custom designs in Metro Detroit, MI. Free quotes and financing available!"
       />
       <meta
         name="keywords"
-        content="stone bathroom remodeling Metro Detroit, bathroom renovation Michigan, stone shower conversion, walk-in tubs Metro Detroit, custom stone bathroom design, premium bathroom remodel"
+        content="bathroom remodeling Metro Detroit, bathroom renovation Michigan, shower conversion, walk-in tubs Metro Detroit, custom  bathroom design, premium bathroom remodel"
       />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,7 @@ function SEOMetadata() {
       <meta name="ICBM" content="44.083996, -93.225996" />
 
       {/* Open Graph Tags */}
-      <meta property="og:title" content="Stone Works Remodeling | Premium Stone Bathroom Remodeling in Metro Detroit, MI" />
+      <meta property="og:title" content="Stone Works Remodeling | Premium Bathroom Remodeling in Metro Detroit, MI" />
       <meta
         property="og:description"
         content="Transform your bathroom with Stone Works Remodeling’s expert stone-based designs, shower conversions, and walk-in tubs in Metro Detroit, MI. Free quotes and financing available."
@@ -43,7 +43,7 @@ function SEOMetadata() {
         property="og:image"
         content="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
       />
-      <meta property="og:image:alt" content="Modern stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI" />
+      <meta property="og:image:alt" content="Modern bathroom remodel by Stone Works Remodeling in Metro Detroit, MI" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_US" />
@@ -124,14 +124,14 @@ function SEOMetadata() {
                 {
                   "@type": "Offer",
                   "name": "Complete Bathroom Remodeling",
-                  "description": "Comprehensive stone bathroom remodeling with custom designs in Metro Detroit, MI",
+                  "description": "Comprehensive bathroom remodeling with custom designs in Metro Detroit, MI",
                   "url": "https://stoneworkremodeling.com/services/bathroom-remodeling",
                   "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp",
                 },
                 {
                   "@type": "Offer",
                   "name": "Shower Conversion",
-                  "description": "Tub-to-shower conversions with stone finishes in Metro Detroit, MI",
+                  "description": "Tub-to-shower conversions with finishes in Metro Detroit, MI",
                   "url": "https://stoneworkremodeling.com/services/shower-conversion",
                   "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/2gOE7M5Mw4F9ecfLC92pQ.webp",
                 },
@@ -292,7 +292,7 @@ export default function HomePage() {
   const beforeAfterImages: GalleryImage[] = [
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/Gemini_Generated_Image_7bprdt7bprdt7bpr.webp",
-      alt: "Before stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
+      alt: "Before  bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -300,7 +300,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image.webp",
-      alt: "After stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
+      alt: "After  bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -343,7 +343,7 @@ export default function HomePage() {
   const recentProjects: GalleryImage[] = [
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/NctOfmDbqGoQGM2Qm9a8C.webp",
-      alt: "Luxury stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
+      alt: "Luxury  bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -351,7 +351,7 @@ export default function HomePage() {
     },
     {
       src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/i5a_set3C7bnEDegPuZld.webp",
-      alt: "Modern stone shower conversion in Metro Detroit, MI by Stone Works Remodeling",
+      alt: "Modern  shower conversion in Metro Detroit, MI by Stone Works Remodeling",
       width: 500,
       height: 300,
       blurDataURL:
@@ -370,7 +370,7 @@ export default function HomePage() {
   // FAQs with local context
   const faqs = [
     {
-      question: "How long does a stone bathroom remodel take in Metro Detroit, MI?",
+      question: "How long does a  bathroom remodel take in Metro Detroit, MI?",
       answer:
         "Most standard  bathroom remodels are completed within 10 business days. Larger projects or custom designs may take 2-3 weeks. We provide a specific timeline during your free Metro Detroit consultation.",
     },
@@ -380,7 +380,7 @@ export default function HomePage() {
         "Yes! We offer flexible financing options, including 0% interest for 12 months for qualified buyers in Metro Detroit, MI, and surrounding areas",
     },
     {
-      question: "Are your stone products and installations covered by warranty?",
+      question: "Are your  products and installations covered by warranty?",
       answer:
         "All Bathroom products come with manufacturer warranties, and we provide warranty on workmanship for projects in Metro Detroit, MI.",
     },
@@ -446,7 +446,7 @@ export default function HomePage() {
                     "@type": "Person",
                     "name": "Anonymous",
                   },
-                  "reviewBody": "Over 500 satisfied customers for stone bathroom remodeling in Metro Detroit, MI.",
+                  "reviewBody": "Over 500 satisfied customers for bathroom remodeling in Metro Detroit, MI.",
                 },
               ]),
             }}
@@ -473,19 +473,19 @@ export default function HomePage() {
                 >
                   Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
                   <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
-                    Into a Luxurious Stone Retreat
+                    Into a Luxurious  Retreat
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-2xl">
-                  Discover expert stone bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
-                  stone craftsmanship, and a satisfaction guarantee for your dream bathroom.
+                  Discover expert bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
+                   craftsmanship, and a satisfaction guarantee for your dream bathroom.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
                   <Link
                     href="/contact"
                     className="bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center group transform hover:-translate-y-1"
-                    aria-label="Get a free quote for stone bathroom remodeling in Metro Detroit, MI"
+                    aria-label="Get a free quote for  bathroom remodeling in Metro Detroit, MI"
                   >
                     Get Your Free Quote
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -559,7 +559,7 @@ export default function HomePage() {
                 <div className="relative bg-white p-2 rounded-xl shadow-2xl transform rotate-2 max-w-[600px] mx-auto">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
-                    alt="Luxurious stone bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
+                    alt="Luxurious bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
                     width={600}
                     height={400}
                     className="w-full h-auto rounded-lg object-cover"
@@ -634,10 +634,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Premium Stone Bathroom Services in Metro Detroit, MI
+                Premium Bathroom Services in Metro Detroit, MI
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                From complete stone bathroom remodels to walk-in tubs, our expert team delivers
+                From complete  bathroom remodels to walk-in tubs, our expert team delivers
                 exceptional results in Metro Detroit, MI.
               </p>
             </div>
@@ -648,7 +648,7 @@ export default function HomePage() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
-                    alt="Complete stone bathroom remodeling by Stone Works Remodeling in Metro Detroit, MI"
+                    alt="Complete bathroom remodeling by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -665,17 +665,17 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Transform your bathroom with our comprehensive stone remodeling services in
-                    Metro Detroit, MI, featuring custom stone tiles and fixtures.
+                    Transform your bathroom with our comprehensive  remodeling services in
+                    Metro Detroit, MI, featuring custom  tiles and fixtures.
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
-                      <span>Custom stone design services</span>
+                      <span>Custom  design services</span>
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
-                      <span>Premium stone fixtures</span>
+                      <span>Premium  fixtures</span>
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
@@ -714,13 +714,13 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Upgrade your bathtub with a modern stone replacement in Metro Detroit, MI, enhancing
+                    Upgrade your bathtub with a modern  replacement in Metro Detroit, MI, enhancing
                     both style and functionality.
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
-                      <span>Wide selection of stone styles</span>
+                      <span>Wide selection of  styles</span>
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
@@ -728,7 +728,7 @@ export default function HomePage() {
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
-                      <span>Durable, easy-clean stone materials</span>
+                      <span>Durable, easy-clean  materials</span>
                     </li>
                   </ul>
                   <Link
@@ -763,7 +763,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Convert your tub into a spacious stone shower in Metro Detroit, MI, with custom
+                    Convert your tub into a spacious  shower in Metro Detroit, MI, with custom
                     designs and safety features.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -773,7 +773,7 @@ export default function HomePage() {
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
-                      <span>Custom stone enclosures</span>
+                      <span>Custom  enclosures</span>
                     </li>
                     <li className="flex items-center text-gray-700">
                       <Check className="h-5 w-5 text-green-500 mr-2" />
@@ -857,10 +857,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="process-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Simple 4-Step Stone Remodeling Process
+                Our Simple 4-Step  Remodeling Process
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We make your stone bathroom transformation in Metro Detroit, MI, smooth and stress-free.
+                We make your  bathroom transformation in Metro Detroit, MI, smooth and stress-free.
               </p>
             </div>
 
@@ -872,7 +872,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Free Consultation</h3>
                   <p className="text-gray-600">
-                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your stone
+                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your 
                     bathroom vision.
                   </p>
                 </div>
@@ -884,9 +884,9 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">
                     2
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Personalized Stone Design</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Personalized  Design</h3>
                   <p className="text-gray-600">
-                    Our designers create a custom stone bathroom plan with 3D renderings for your
+                    Our designers create a custom  bathroom plan with 3D renderings for your
                     Metro Detroit,MI home.
                   </p>
                 </div>
@@ -898,13 +898,13 @@ export default function HomePage() {
                   <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6">
                     3
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Stone Installation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Expert  Installation</h3>
                   <p className="text-gray-600">
-                    Our licensed professionals install your stone bathroom with precision in Metro Detroit,
+                    Our licensed professionals install your  bathroom with precision in Metro Detroit,
                     MI.
                   </p>
                 </div>
-                <div className="hidden lg:block absolute top-1/2 left-full h-1 w-24 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
+                <div className="hidden lg:block absolute top-1/2 left-full h-1 w-4 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
               </div>
 
               <div>
@@ -914,7 +914,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Final Walkthrough</h3>
                   <p className="text-gray-600">
-                    We ensure your new stone bathroom in Metro Detroit, MI, meets your expectations with a
+                    We ensure your new  bathroom in Metro Detroit, MI, meets your expectations with a
                     detailed walkthrough.
                   </p>
                 </div>
@@ -938,10 +938,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 id="gallery-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Stone Bathroom Transformations in Metro Detroit, MI
+                Our  Bathroom Transformations in Metro Detroit, MI
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore real stone bathroom projects showcasing our craftsmanship in Metro Detroit, MI.
+                Explore real  bathroom projects showcasing our craftsmanship in Metro Detroit, MI.
               </p>
             </div>
 
@@ -974,20 +974,20 @@ export default function HomePage() {
                   {
                     before: beforeAfterImages[0],
                     after: beforeAfterImages[1],
-                    title: "Master Stone Bathroom Renovation",
-                    desc: "Complete stone remodel with custom shower and premium tiles in Metro Detroit, MI",
+                    title: "Master  Bathroom Renovation",
+                    desc: "Complete  remodel with custom shower and premium tiles in Metro Detroit, MI",
                   },
                   {
                     before: beforeAfterImages[2],
                     after: beforeAfterImages[3],
                     title: "Tub-to-shower",
-                    desc: "Tub-to-shower conversion with stone finishes and non-slip flooring in Metro Detroit, MI",
+                    desc: "Tub-to-shower conversion with  finishes and non-slip flooring in Metro Detroit, MI",
                   },
                   {
                     before: beforeAfterImages[4],
                     after: beforeAfterImages[5],
                     title: "Free standing tub",
-                    desc: "Stone walk-in tub with therapeutic jets and safety features in Metro Detroit, MI",
+                    desc: " walk-in tub with therapeutic jets and safety features in Metro Detroit, MI",
                   },
                 ].map((item, index) => (
                   <div
@@ -1087,7 +1087,7 @@ export default function HomePage() {
                 What Customer in Metro Detroit Say
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Hear from homeowners in Metro Detroit, MI, who transformed their bathrooms with Stone Works
+                Hear from homeowners in Metro Detroit, MI, who transformed their bathrooms with  Works
                 Remodeling.
               </p>
             </div>
@@ -1161,10 +1161,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Stone Bathroom Remodeling FAQs
+                 Bathroom Remodeling FAQs
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Answers to common questions about stone bathroom remodeling in Metro Detroit, MI.
+                Answers to common questions about  bathroom remodeling in Metro Detroit, MI.
               </p>
             </div>
 
@@ -1211,11 +1211,11 @@ export default function HomePage() {
         >
           <div className="container mx-auto px-4 text-center">
             <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold mb-6">
-              Ready for Your Stone Bathroom in Metro Detroit, MI?
+              Ready for Your  Bathroom in Metro Detroit, MI?
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Schedule your free consultation today and start your journey to a luxurious stone
-              bathroom with Stone Works Remodeling.
+              bathroom with  Works Remodeling.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link

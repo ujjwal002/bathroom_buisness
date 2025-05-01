@@ -1,40 +1,40 @@
 // lib/blogPosts.ts
 export interface BlogPost {
-    id: number;
-    title: string;
-    excerpt: string;
-    category: string;
-    date: string;
-    author: string;
-    image: string;
-    slug: string;
-    content: string;
+  id: number;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  author: string;
+  image: string;
+  slug: string;
+  content: string;
 }
 
 export interface Category {
-    id: string;
-    label: string;
+  id: string;
+  label: string;
 }
 
 export const categories: Category[] = [
-    { id: "all", label: "All Posts" },
-    { id: "stone-design", label: "Stone Design" },
-    { id: "remodeling-tips", label: "Remodeling Tips" },
-    { id: "project-spotlight", label: "Project Spotlights" },
-    { id: "company-updates", label: "Company Updates" },
+  { id: "all", label: "All Posts" },
+  { id: "stone-design", label: "Stone Design" },
+  { id: "remodeling-tips", label: "Remodeling Tips" },
+  { id: "project-spotlight", label: "Project Spotlights" },
+  { id: "company-updates", label: "Company Updates" },
 ];
 
 export const blogPosts: BlogPost[] = [
-    {
-        id: 1,
-        title: "5 Stunning Stone Tile Trends for 2025 Bathrooms",
-        excerpt: "Explore the latest stone tile designs, from marble to slate, to elevate your bathroom remodel.",
-        category: "stone-design",
-        date: "2025-04-01",
-        author: "Jane Smith",
-        image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.png",
-        slug: "stone-tile-trends-2025",
-        content: `
+  {
+    id: 1,
+    title: "5 Stunning Stone Tile Trends for 2025 Bathrooms",
+    excerpt: "Explore the latest stone tile designs, from marble to slate, to elevate your bathroom remodel.",
+    category: "stone-design",
+    date: "2025-04-01",
+    author: "Jane Smith",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.png",
+    slug: "stone-tile-trends-2025",
+    content: `
         <p class="lead">As we move into 2025, natural stone continues to dominate bathroom design trends, offering both timeless elegance and modern sophistication. Homeowners in Metro Detroit are increasingly turning to stone materials to create spa-like retreats in their own homes.</p>
         
         <p>Stone tiles are making a bold statement in 2025 bathroom designs. From luxurious marble to rugged slate, these natural materials offer unmatched elegance and durability. Here are five trends to inspire your next remodel:</p>
@@ -105,17 +105,17 @@ export const blogPosts: BlogPost[] = [
         
         
       `,
-    },
-    {
-        id: 2,
-        title: "Marble Masterpiece: A Bathroom Transformation in Bloomfield Hills",
-        excerpt: "See how we used marble stone to transform a dated bathroom into a luxurious retreat.",
-        category: "project-spotlight",
-        date: "2025-03-15",
-        author: "Mike Johnson",
-        image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/_QE_wu8yh888nrX1JUzYt.png",
-        slug: "marble-bathroom-transformation",
-        content: `
+  },
+  {
+    id: 2,
+    title: "Marble Masterpiece: A Bathroom Transformation in Bloomfield Hills",
+    excerpt: "See how we used marble stone to transform a dated bathroom into a luxurious retreat.",
+    category: "project-spotlight",
+    date: "2025-03-15",
+    author: "Mike Johnson",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/_QE_wu8yh888nrX1JUzYt.png",
+    slug: "marble-bathroom-transformation",
+    content: `
         <h2>Project Overview</h2>
         <div class="before-after">
           <div class="before">
@@ -175,17 +175,17 @@ export const blogPosts: BlogPost[] = [
           <p>- Sarah & Robert K., Bloomfield Hills</p>
         </div>
       `,
-    },
-    {
-        id: 3,
-        title: "The Complete Guide to Choosing the Perfect Stone for Your Shower",
-        excerpt: "Discover how to select the ideal stone material that combines beauty, durability, and safety for your shower renovation.",
-        category: "remodeling-tips",
-        date: "2025-02-28",
-        author: "Emily Davis",
-        image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/2gOE7M5Mw4F9ecfLC92pQ.png",
-        slug: "choose-stone-shower",
-        content: `
+  },
+  {
+    id: 3,
+    title: "The Complete Guide to Choosing the Perfect Stone for Your Shower",
+    excerpt: "Discover how to select the ideal stone material that combines beauty, durability, and safety for your shower renovation.",
+    category: "remodeling-tips",
+    date: "2025-02-28",
+    author: "Emily Davis",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/2gOE7M5Mw4F9ecfLC92pQ.png",
+    slug: "choose-stone-shower",
+    content: `
           <div class="blog-intro">
             <p class="lead">Your shower is the centerpiece of your bathroom, and choosing the right stone material can mean the difference between a daily spa experience and constant maintenance headaches. As Metro Detroit's stone shower specialists, we've installed hundreds of stone showers and know exactly what works in our climate.</p>
             
@@ -403,18 +403,18 @@ export const blogPosts: BlogPost[] = [
             </ul>
           </div>
         `
-    },
+  },
 
-    {
-        id: 4,
-        title: "Why Slate is the Perfect Choice for Your Bathroom Remodel",
-        excerpt: "Discover how slate's natural beauty, durability, and safety features make it ideal for luxury bathroom designs.",
-        category: "stone-design",
-        date: "2025-02-10",
-        author: "John Doe",
-        image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/w6HJzxSeslcbuk0sJgPQc.png",
-        slug: "slate-bathroom-remodeling",
-        content: `
+  {
+    id: 4,
+    title: "Why Slate is the Perfect Choice for Your Bathroom Remodel",
+    excerpt: "Discover how slate's natural beauty, durability, and safety features make it ideal for luxury bathroom designs.",
+    category: "stone-design",
+    date: "2025-02-10",
+    author: "John Doe",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/w6HJzxSeslcbuk0sJgPQc.png",
+    slug: "slate-bathroom-remodeling",
+    content: `
           <div class="blog-intro">
             <p class="lead">In the world of natural stone for bathrooms, slate stands out as a uniquely versatile material that combines rugged durability with sophisticated aesthetics. At Stone Works Remodeling, we've seen slate transform ordinary bathrooms into stunning natural retreats that stand the test of time.</p>
             
@@ -557,17 +557,17 @@ export const blogPosts: BlogPost[] = [
             </ul>
           </div>
         `
-    },
-    {
-        id: 5,
-        title: "Building a Greener Future: Our Sustainable Stone Remodeling Practices",
-        excerpt: "Discover how Stone Works Remodeling combines luxury and sustainability through innovative eco-conscious practices.",
-        category: "company-updates",
-        date: "2025-01-20",
-        author: "Jane Smith",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-        slug: "stone-work-sustainability",
-        content: `
+  },
+  {
+    id: 5,
+    title: "Building a Greener Future: Our Sustainable Stone Remodeling Practices",
+    excerpt: "Discover how Stone Works Remodeling combines luxury and sustainability through innovative eco-conscious practices.",
+    category: "company-updates",
+    date: "2025-01-20",
+    author: "Jane Smith",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    slug: "stone-work-sustainability",
+    content: `
           <div class="blog-intro">
             <p class="lead">At Stone Works Remodeling, we believe luxury and environmental responsibility should go hand-in-hand. As Michigan's premier stone remodeling specialists, we've implemented comprehensive sustainability initiatives that reduce our environmental impact without compromising quality or design.</p>
             
@@ -705,6 +705,185 @@ export const blogPosts: BlogPost[] = [
             </ul>
           </div>
         `
-      }
+  },
+  {
+    id: 6,
+    title: "The Future of Luxury: Top Bathroom Remodeling Trends for 2025",
+    excerpt: "Discover the most innovative design trends that are transforming bathrooms into high-tech wellness sanctuaries this year.",
+    category: "trends",
+    date: "2025-03-10",
+    author: "Alex Johnson",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/modern-bathroom-interior-with-double-sinks-smart-technology-control-panel.webp",
+    slug: "bathroom-trends-2025",
+    content: `
+      <div class="blog-intro">
+        <p class="lead">As we move deeper into 2025, bathroom design has evolved beyond mere functionality to become a holistic wellness experience. At Stone Works Remodeling, we're at the forefront of these innovations, blending cutting-edge technology with timeless natural materials to create sanctuaries that pamper both body and soul.</p>
+        
+
+  
+        <div class="trend-badge">
+          <span>2025 Trend Report</span>
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <div class="image-container">
+          <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/modern-bathroom-interior-with-double-sinks-smart-technology-control-panel.webp" alt="2025 luxury bathroom trends" class="featured-image">
+          <p class="image-caption">A 2025 spa bathroom featuring smart mirrors, organic stone, and biophilic design</p>
+        </div>
+  
+        <h2>1. Smart Wellness Bathrooms</h2>
+        <p>The connected bathroom has reached new heights in 2025 with integrated health technology:</p>
+        
+        <div class="trend-grid">
+          <div class="trend-card">
+            <div class="trend-icon">💎</div>
+            <h3>AI-Powered Skin Analysis</h3>
+            <p>Mirrors that assess skin health and recommend products</p>
+            <div class="trend-stat">+320% demand since 2023</div>
+          </div>
+          
+          <div class="trend-card">
+            <div class="trend-icon">🌡️</div>
+            <h3>Climate Personalization</h3>
+            <p>Zoned heating/cooling for floors, walls, and shower areas</p>
+          </div>
+          
+          <div class="trend-card">
+            <div class="trend-icon">🎵</div>
+            <h3>Immersive Audio</h3>
+            <p>Voice-controlled sound systems built into shower walls</p>
+          </div>
+        </div>
+  
+        <div class="tech-spotlight">
+          <h3>Spotlight: The Smart Shower Revolution</h3>
+          <div class="tech-comparison">
+            <div class="tech-item">
+              <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/modern-bathroom-interior-with-double-sinks-smart-technology-control-panel.webp" alt="Smart shower control">
+              <h4>Digital Controls</h4>
+              <p>Preset water temp, pressure, and even mineral content</p>
+            </div>
+            <div class="tech-item">
+              <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/modern-bathroom-interior-with-double-sinks-smart-technology-control-panel.webp" alt="Water usage monitor">
+              <h4>Water Analytics</h4>
+              <p>Real-time usage tracking with conservation tips</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <h2>2. Organic Modern Stone Designs</h2>
+        <p>Natural stone remains dominant but with fresh interpretations:</p>
+        
+        <div class="stone-trends">
+          <div class="stone-trend">
+            <h3>Fluted Stone Surfaces</h3>
+            <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/elegant-bathroom-with-blue-fluted-accent-wall-and-marble-tiles--material-depot-84e2f9b0bf.webp" alt="Fluted marble walls">
+            <p>Vertical grooves adding texture to vanity walls</p>
+          </div>
+          <div class="stone-trend">
+            <h3>Fossil-Embedded Limestone</h3>
+            <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/8c90646d158ac2aa7c15ae36524824f9.webp" alt="Fossil stone">
+            <p>Natural history as art in flooring and accents</p>
+          </div>
+          <div class="stone-trend">
+            <h3>Two-Tone Stone Combinations</h3>
+            <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/16c9da3a79b8db92ec62937b0b471781.webp" alt="Two tone stone">
+            <p>Dramatic contrasts like basalt with travertine</p>
+          </div>
+        </div>
+  
+        <div class="pro-tip">
+          <h4>Designer Insight:</h4>
+          <p>"In 2025, we're seeing clients choose stone with more character - bold veining, dramatic color variations, and unfinished edges that celebrate natural imperfections."</p>
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <h2>3. Biophilic Design Integration</h2>
+        <p>The connection to nature becomes more sophisticated:</p>
+        
+        <div class="bio-features">
+          <div class="bio-card">
+            <h3>Living Stone Walls</h3>
+            <p>Porous stone surfaces with integrated planters for vertical gardens</p>
+            <div class="benefit-tag">Air Purifying</div>
+          </div>
+          <div class="bio-card">
+            <h3>Natural Light Amplification</h3>
+            <p>Light-diffusing stone walls that glow softly</p>
+            <div class="benefit-tag">Mood Enhancing</div>
+          </div>
+        </div>
+  
+        <div class="case-study">
+          <h3>Project Highlight: The Forest Bathroom</h3>
+          <div class="case-study-content">
+            <img src="/trends/forest-bathroom.jpg" alt="Forest bathroom">
+            <div>
+              <p>This award-winning design features:</p>
+              <ul>
+                <li>Reclaimed cedar soaking tub surround</li>
+                <li>Local fieldstone waterfall wall</li>
+                <li>Live moss accents between stone tiles</li>
+              </ul>
+              <p class="case-study-result">Result: 45% increase in natural light retention</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <h2>4. Bold Color & Metal Combinations</h2>
+        <p>2025 sees daring new material pairings:</p>
+        
+        <div class="color-trends">
+          <div class="palette">
+            <div class="color-box" style="background-color: #3a5a78;"></div>
+            <div class="color-box" style="background-color: #c8b6a6;"></div>
+            <div class="color-box" style="background-color: #5e3023;"></div>
+            <p>Deep Teal + Clay + Espresso</p>
+          </div>
+          <div class="palette">
+            <div class="color-box" style="background-color: #e6e2dd;"></div>
+            <div class="color-box" style="background-color: #b5c2c8;"></div>
+            <div class="color-box" style="background-color: #7d8c89;"></div>
+            <p>Cloud + Pewter + Slate</p>
+          </div>
+        </div>
+  
+        <div class="metal-trends">
+          <h3>Metal Finishes Making Waves:</h3>
+          <ul>
+            <li><strong>Brushed Brass:</strong> Warmer alternative to gold</li>
+            <li><strong>Blackened Steel:</strong> Industrial contrast to stone</li>
+            <li><strong>Textured Copper:</strong> Organic patina development</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="cta-section trend-cta">
+        <h2>Ready to Bring 2025 Trends to Your Home?</h2>
+        <p>Our design team stays ahead of the curve to create bathrooms that are both timeless and cutting-edge.</p>
+        <div class="cta-buttons">
+          <a href="/contact" >Book a Virtual Trend Consultation</a>
+          <a href="/contact" >View Our 2025 Trend Portfolio</a>
+        </div>
+      </div>
+  
+      <div class="trend-outlook">
+        <h3>Looking Beyond 2025:</h3>
+        <p>Early indicators suggest these emerging trends will gain momentum:</p>
+        <ul>
+          <li>Self-cleaning mineral surfaces</li>
+          <li>Augmented reality mirrors</li>
+          <li>Adaptive stone that changes texture with temperature</li>
+        </ul>
+      </div>
+    `
+  }
+ 
 ];
 

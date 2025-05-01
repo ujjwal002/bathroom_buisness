@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/98 backdrop-blur-sm shadow-lg" : "bg-white/95"
+        isScrolled ? "bg-white/98 backdrop-blur-sm shadow-lg py-1" : "bg-white/95"
       }`}
     >
       {/* Structured Data */}
@@ -104,9 +104,9 @@ export default function Header() {
       />
 
       {/* Top Bar */}
-      <div className="bg-gray-900 text-white py-2 px-4 sm:px-6">
-        <div className="container mx-auto flex flex-wrap justify-between items-center gap-4">
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+      <div className="bg-gray-900 text-white py-2 px-4">
+        <div className="container mx-auto flex flex-wrap justify-between items-center">
+          <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2 group">
               <Phone className="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
               <a
@@ -117,7 +117,7 @@ export default function Header() {
                 (248) 346-8926
               </a>
             </div>
-            <div className="flex items-center space-x-2 group">
+            <div className="hidden md:flex items-center space-x-2 group">
               <Mail className="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
               <a
                 href="mailto:stoneworksremodeling8@gmail.com"
@@ -127,27 +127,27 @@ export default function Header() {
               </a>
             </div>
           </div>
-          <div className="flex items-center space-x-2 text-xs font-medium text-gray-300">
+          <div className="hidden md:flex items-center space-x-2 text-xs font-medium text-gray-300">
             <Clock className="h-3 w-3 text-blue-400" />
             <span>Mon-Fri: 8AM-6PM | Sat: 9AM-2PM</span>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4">
         {/* Main Navigation */}
-        <nav className="flex items-center justify-between py-3 sm:py-4">
+        <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center group" aria-label="Stone Works Remodeling Home">
-            <div className="flex items-center gap-3 sm:gap-4 group hover:scale-105 transition-transform duration-300">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden shadow-md border border-gray-200">
+            <div className="flex items-center gap-4 group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-full overflow-hidden shadow-md border border-gray-200">
                 <Image
                   src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/stone.webp"
                   alt="Stone Works Remodeling logo for premium stone bathroom remodeling in Metro Detroit, MI"
                   className="w-full h-full object-cover"
                   width={64}
                   height={64}
-                  sizes="(max-width: 640px) 48px, 64px"
+                  sizes="64px"
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg=="
                   quality={80}
@@ -155,19 +155,19 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-xl sm:text-2xl font-extralight text-gray-900 tracking-tight">
+                <h1 className="text-2xl font-extralight text-gray-900 tracking-tight">
                   Stone Works <span className="text-blue-600">Remodeling</span>
                 </h1>
-                <span className="text-xs sm:text-sm text-gray-500">Your Trusted Remodeling Partner</span>
+                <span className="text-sm text-gray-500">Your Trusted Remodeling Partner</span>
               </div>
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1">
             <Link
               href="/"
-              className={`px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
                 isActive("/")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
@@ -179,7 +179,7 @@ export default function Header() {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className={`flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 ${
+                className={`flex items-center px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 ${
                   isActive("/services")
                     ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 group-hover:bg-blue-50"
                     : "group-hover:text-blue-600 after:bg-blue-600 group-hover:bg-gray-50"
@@ -193,71 +193,71 @@ export default function Header() {
 
               <div
                 id="services-dropdown"
-                className="absolute left-0 mt-2 w-80 sm:w-96 bg-white rounded-lg shadow-2xl py-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100 transform origin-top scale-95 group-hover:scale-100 overflow-hidden"
+                className="absolute left-0 mt-1 w-96 bg-white rounded-lg shadow-2xl py-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100 transform origin-top scale-95 group-hover:scale-100 overflow-hidden"
               >
                 <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4">
-                  <h3 className="font-semibold text-base sm:text-lg">Our Premium Services</h3>
-                  <p className="text-xs sm:text-sm text-blue-100 mt-1">Stone bathroom solutions in Metro Detroit, MI</p>
+                  <h3 className="font-semibold text-lg">Our Premium Services</h3>
+                  <p className="text-sm text-blue-100 mt-1">Stone bathroom solutions in Metro Detroit, MI</p>
                 </div>
                 <div className="grid grid-cols-1 gap-0">
                   <Link
                     href="/services"
-                    className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
+                    className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
-                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-3">
-                      <ShowerHead className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
+                      <ShowerHead className="h-5 w-5 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
+                      <h4 className="font-medium text-gray-900 group-hover/item:text-blue-600 transition-colors">
                         Stone Bathroom Remodeling
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Complete stone bathroom renovations</p>
+                      <p className="text-sm text-gray-500 mt-1">Complete stone bathroom renovations</p>
                     </div>
                   </Link>
                   <Link
                     href="/services"
-                    className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
+                    className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
-                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-3">
-                      <Droplets className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
+                      <Droplets className="h-5 w-5 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
+                      <h4 className="font-medium text-gray-900 group-hover/item:text-blue-600 transition-colors">
                         Shower Conversion
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Convert tubs to modern walk-in showers</p>
+                      <p className="text-sm text-gray-500 mt-1">Convert tubs to modern walk-in showers</p>
                     </div>
                   </Link>
                   <Link
                     href="/services"
-                    className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
+                    className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
-                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-3">
-                      <Accessibility className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
+                      <Accessibility className="h-5 w-5 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
+                      <h4 className="font-medium text-gray-900 group-hover/item:text-blue-600 transition-colors">
                         Walk-in Tubs
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Safe, accessible bathing solutions</p>
+                      <p className="text-sm text-gray-500 mt-1">Safe, accessible bathing solutions</p>
                     </div>
                   </Link>
                   <Link
                     href="/services"
-                    className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors"
+                    className="group/item flex items-center px-4 py-4 hover:bg-blue-50 transition-colors"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
-                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-3">
-                      <Bath className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                    <div className="p-2 rounded-full bg-blue-100 group-hover/item:bg-blue-200 transition-colors mr-4">
+                      <Bath className="h-5 w-5 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
+                      <h4 className="font-medium text-gray-900 group-hover/item:text-blue-600 transition-colors">
                         Custom Stonework
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Unique stone designs for your bathroom</p>
+                      <p className="text-sm text-gray-500 mt-1">Unique stone designs for your bathroom</p>
                     </div>
                   </Link>
                 </div>
@@ -282,7 +282,7 @@ export default function Header() {
 
             <Link
               href="/gallery"
-              className={`px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
                 isActive("/gallery")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
@@ -292,7 +292,7 @@ export default function Header() {
             </Link>
             <Link
               href="/about"
-              className={`px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
                 isActive("/about")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
@@ -302,7 +302,7 @@ export default function Header() {
             </Link>
             <Link
               href="/blog"
-              className={`px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
                 isActive("/blog")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
@@ -312,7 +312,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
-              className={`px-3 py-2 rounded-md text-sm font-medium text-gray-800 transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
+              className={`px-4 py-2 rounded-md text-gray-800 font-medium transition-all relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 ${
                 isActive("/contact")
                   ? "text-blue-600 after:bg-blue-600 after:w-full hover:text-blue-700 hover:bg-blue-50"
                   : "hover:text-blue-600 after:bg-blue-600 hover:bg-gray-50"
@@ -325,14 +325,14 @@ export default function Header() {
           {/* CTA Button */}
           <Link
             href="/contact"
-            className="hidden lg:flex bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-px transform ml-6"
+            className="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-md hover:translate-y-px transform ml-8"
           >
             FREE QUOTE
           </Link>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-gray-800 focus:outline-none hover:text-blue-600 transition-colors p-2 hover:bg-gray-100 rounded-md"
+            className="md:hidden text-gray-800 focus:outline-none hover:text-blue-600 transition-colors p-1 hover:bg-gray-100 rounded-md"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
@@ -346,14 +346,14 @@ export default function Header() {
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
-        className={`lg:hidden bg-white py-4 px-4 sm:px-6 shadow-lg transform transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        className={`md:hidden bg-white py-3 px-4 shadow-lg transform transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
         } ${mobileMenuOpen ? "block" : "hidden"}`}
       >
         <Link
           href="/"
-          className={`block py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-            isActive("/") ? "text-blue-600" : ""
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/") ? "text-blue-600 font-medium" : ""
           }`}
           onClick={() => setMobileMenuOpen(false)}
         >
@@ -364,8 +364,8 @@ export default function Header() {
         <div>
           <button
             onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-            className={`flex items-center justify-between w-full py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-              isActive("/services") ? "text-blue-600" : ""
+            className={`flex items-center justify-between w-full py-3 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+              isActive("/services") ? "text-blue-600 font-medium" : "text-gray-800"
             }`}
             aria-expanded={servicesDropdownOpen}
             aria-controls="mobile-services-dropdown"
@@ -377,13 +377,13 @@ export default function Header() {
           </button>
           <div
             id="mobile-services-dropdown"
-            className={`py-2 bg-gray-50 rounded-md mb-2 overflow-hidden transition-all duration-300 ${
+            className={`py-1 bg-gray-50 rounded-md mb-2 overflow-hidden transition-all duration-300 ${
               servicesDropdownOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
             <Link
               href="/services/bathroom-remodeling"
-              className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
                 pathname === "/services/bathroom-remodeling" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
@@ -395,7 +395,7 @@ export default function Header() {
             </Link>
             <Link
               href="/services/shower-conversion"
-              className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
                 pathname === "/services/shower-conversion" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
@@ -407,7 +407,7 @@ export default function Header() {
             </Link>
             <Link
               href="/services/walk-in-tubs"
-              className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
                 pathname === "/services/walk-in-tubs" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
@@ -419,7 +419,7 @@ export default function Header() {
             </Link>
             <Link
               href="/services/custom-stonework"
-              className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
+              className={`flex items-center px-4 py-3 hover:bg-blue-50 transition-all ${
                 pathname === "/services/custom-stonework" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
@@ -429,7 +429,7 @@ export default function Header() {
               </div>
               <span>Custom Stonework</span>
             </Link>
-            <div className="px-4 py-2 border-t border-gray-200">
+            <div className="px-4 py-2 border-t border-gray-200 mt-2">
               <Link
                 href="/services"
                 className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center"
@@ -450,8 +450,8 @@ export default function Header() {
 
         <Link
           href="/gallery"
-          className={`block py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-            isActive("/gallery") ? "text-blue-600" : ""
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/gallery") ? "text-blue-600 font-medium" : ""
           }`}
           onClick={() => setMobileMenuOpen(false)}
         >
@@ -459,8 +459,8 @@ export default function Header() {
         </Link>
         <Link
           href="/about"
-          className={`block py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-            isActive("/about") ? "text-blue-600" : ""
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/about") ? "text-blue-600 font-medium" : ""
           }`}
           onClick={() => setMobileMenuOpen(false)}
         >
@@ -468,8 +468,8 @@ export default function Header() {
         </Link>
         <Link
           href="/blog"
-          className={`block py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-            isActive("/blog") ? "text-blue-600" : ""
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/blog") ? "text-blue-600 font-medium" : ""
           }`}
           onClick={() => setMobileMenuOpen(false)}
         >
@@ -477,8 +477,8 @@ export default function Header() {
         </Link>
         <Link
           href="/contact"
-          className={`block py-2 text-sm font-medium text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
-            isActive("/contact") ? "text-blue-600" : ""
+          className={`block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-100 transition-all hover:pl-2 ${
+            isActive("/contact") ? "text-blue-600 font-medium" : ""
           }`}
           onClick={() => setMobileMenuOpen(false)}
         >
@@ -486,10 +486,10 @@ export default function Header() {
         </Link>
 
         {/* Mobile CTA */}
-        <div className="mt-4 mb-2">
+        <div className="mt-6 mb-2">
           <Link
             href="/contact"
-            className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md text-center text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+            className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md text-center font-medium transition-all duration-300 shadow-md hover:shadow-lg"
             onClick={() => setMobileMenuOpen(false)}
           >
             GET YOUR FREE QUOTE TODAY
@@ -497,7 +497,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Contact Info */}
-        <div className="mt-4 pt-4 border-t border-gray-100">
+        <div className="mt-6 pt-4 border-t border-gray-100">
           <div className="flex items-center space-x-2 py-2">
             <Phone className="h-4 w-4 text-blue-600" />
             <a

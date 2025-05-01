@@ -27,7 +27,7 @@ const services: Service[] = [
     longDescription: "Our bathroom remodeling services transform outdated spaces into beautiful, functional areas that reflect your personal style. We handle everything from design to installation, using premium stone materials and the latest techniques to ensure a stunning result that increases your home's value.",
     features: [
       "Custom design consultations",
-      "Premium stone selection",
+      "Premium selection",
       "Fixture upgrades and replacements",
       "Lighting improvements",
       "Flooring installation",
@@ -41,7 +41,7 @@ const services: Service[] = [
       "Modern aesthetic appeal"
     ],
     imageSrc: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/NctOfmDbqGoQGM2Qm9a8C.webp",
-    imageAlt: "Luxury stone bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
+    imageAlt: "Luxury bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
     icon: "✨"
   },
   {
@@ -65,7 +65,7 @@ const services: Service[] = [
       "Water conservation"
     ],
     imageSrc: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/i5a_set3C7bnEDegPuZld.webp",
-    imageAlt: "Modern stone shower conversion in Metro Detroit, MI by Stone Works Remodeling",
+    imageAlt: "Modern shower conversion in Metro Detroit, MI by Stone Works Remodeling",
     icon: "🚿"
   },
   {
@@ -95,11 +95,11 @@ const services: Service[] = [
   {
     id: "stone-countertops",
     title: "Stone Countertop Installation",
-    shortDescription: "Beautiful, durable stone surfaces for bathrooms and kitchens.",
-    longDescription: "Our stone countertop installation service brings elegance and durability to your bathroom or kitchen. We offer a wide selection of premium natural and engineered stone options, including granite, marble, quartz, and more. Each installation is precisely measured and expertly fitted for a flawless finish.",
+    shortDescription: "Beautiful, durable surfaces for bathrooms and kitchens.",
+    longDescription: "Our countertop installation service brings elegance and durability to your bathroom or kitchen. We offer a wide selection of premium natural and engineered stone options, including granite, marble, quartz, and more. Each installation is precisely measured and expertly fitted for a flawless finish.",
     features: [
       "Custom measurements and templates",
-      "Wide selection of stone materials",
+      "Wide selection of materials",
       "Expert fabrication and finishing",
       "Sink and fixture coordination",
       "Sealing and maintenance education",
@@ -201,10 +201,10 @@ const testimonials: Testimonial[] = [
     id: 4,
     name: "David R.",
     location: "Metro Detroit, MI",
-    quote: "The stone countertops they installed are absolutely stunning. The craftsmanship is impeccable, and they were able to match our existing decor perfectly.",
+    quote: "The  countertops they installed are absolutely stunning. The craftsmanship is impeccable, and they were able to match our existing decor perfectly.",
     rating: 5,
     image: "/api/placeholder/60/60",
-    project: "Stone Countertop Installation"
+    project: " Countertop Installation"
   }
 ];
 
@@ -246,7 +246,7 @@ export default function Services() {
       <Head>
         <title>Premium Bathroom Remodeling Services | Stone Works Remodeling | Metro Detroit, MI</title>
         <meta name="description" content="Transform your bathroom with our professional remodeling services including custom designs, shower conversions, walk-in tubs, and premium stone installations in Metro Detroit, Michigan." />
-        <meta name="keywords" content="bathroom remodeling, shower conversion, walk-in tub, stone countertops, Metro Detroit, Michigan, Stone Works Remodeling, luxury bathroom" />
+        <meta name="keywords" content="bathroom remodeling, shower conversion, walk-in tub, countertops, Metro Detroit, Michigan, Stone Works Remodeling, luxury bathroom" />
         <meta property="og:title" content="Premium Bathroom Remodeling Services | Stone Works Remodeling" />
         <meta property="og:description" content="Experience the finest bathroom remodeling services in Metro Detroit, featuring custom designs, luxury materials, and expert craftsmanship." />
         <meta property="og:image" content={services[0].imageSrc} />
@@ -356,7 +356,7 @@ export default function Services() {
                 Transform Your <span className="text-blue-300">Bathroom</span> Into Something Extraordinary
               </h1>
               <p className="text-xl text-gray-200 mb-10 leading-relaxed">
-                Premium stone remodeling services that combine beautiful design, expert craftsmanship, and exceptional materials to create spaces you&apos;ll love for years to come.
+                Premium  remodeling services that combine beautiful design, expert craftsmanship, and exceptional materials to create spaces you&apos;ll love for years to come.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact">
@@ -424,8 +424,8 @@ export default function Services() {
                   key={service.id}
                   onClick={() => setActiveService(service.id)}
                   className={`px-6 py-3 rounded-full transition-all duration-300 ${activeService === service.id
-                      ? "bg-blue-600 text-white shadow-lg"
-                      : "bg-white text-gray-700 hover:bg-gray-100 shadow"
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "bg-white text-gray-700 hover:bg-gray-100 shadow"
                     }`}
                 >
                   <span className="mr-2">{service.icon}</span>
@@ -532,31 +532,40 @@ export default function Services() {
             </motion.div>
 
             {/* Interactive Timeline */}
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
               {/* Timeline navigation */}
-              <div className="flex mb-16 relative">
-                <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
-                {processSteps.map((step) => (
-                  <div
-                    key={step.step}
-                    className="flex-1 relative"
-                    onClick={() => setActiveStep(step.step)}
-                  >
-                    <div className={`
-                      w-10 h-10 rounded-full flex items-center justify-center mx-auto relative z-10 cursor-pointer
-                      transition-all duration-300
-                      ${activeStep === step.step ? 'bg-blue-600 text-white scale-125' : 'bg-white text-blue-600 border-2 border-blue-600'}
-                    `}>
-                      {step.step}
+              <div className="mb-8 sm:mb-12 relative">
+                <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2"></div>
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-0">
+                  {processSteps.map((step) => (
+                    <div
+                      key={step.step}
+                      className="flex-1 relative sm:flex sm:flex-col sm:items-center"
+                      onClick={() => setActiveStep(step.step)}
+                    >
+                      <div
+                        className={`
+                  w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center mx-auto relative z-10 cursor-pointer
+                  transition-all duration-300 text-sm sm:text-base
+                  ${activeStep === step.step
+                            ? "bg-blue-600 text-white scale-110 sm:scale-125"
+                            : "bg-white text-blue-600 border-2 border-blue-600"
+                          }
+                `}
+                      >
+                        {step.step}
+                      </div>
+                      <div
+                        className={`
+                  text-center mt-2 sm:mt-4 font-medium transition-all duration-300 text-sm sm:text-base
+                  ${activeStep === step.step ? "text-blue-600 scale-105" : "text-gray-500"}
+                `}
+                      >
+                        {step.title}
+                      </div>
                     </div>
-                    <div className={`
-                      text-center mt-4 font-medium transition-all duration-300
-                      ${activeStep === step.step ? 'text-blue-600 scale-105' : 'text-gray-500'}
-                    `}>
-                      {step.title}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
               {/* Active step content */}
@@ -567,42 +576,53 @@ export default function Services() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100"
+                    className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100"
                   >
-                    <div className="flex flex-col md:flex-row gap-8 items-center">
-                      <div className="md:w-1/4 flex justify-center">
-                        <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center">
-                          {/* <span className="text-4xl">{step.icon}</span> */}
+                    <div className="flex flex-col gap-6 sm:gap-8">
+                      <div className="flex justify-center">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 rounded-full flex items-center justify-center">
                           <Image
                             src={step.icon}
-                            alt="user profile"
-                            width={48}
-                            height={48}
+                            alt={`Step ${step.step} icon`}
+                            width={32}
+                            height={32}
                             className="object-cover"
-                            sizes="48px"
-                            // placeholder="blur"
-                            // blurDataURL={image.blurDataURL}
+                            sizes="(max-width: 640px) 32px, 40px"
                             loading="lazy"
                             quality={75}
                           />
                         </div>
                       </div>
-                      <div className="md:w-3/4">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                      <div>
+                        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                           Step {step.step}: {step.title}
                         </h3>
-                        <p className="text-lg text-gray-700 mb-6">{step.longDescription}</p>
+                        <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">{step.longDescription}</p>
 
                         {step.step < processSteps.length ? (
                           <button
                             onClick={() => setActiveStep(step.step + 1)}
-                            className="text-blue-600 font-medium hover:text-blue-800 flex items-center"
+                            className="text-blue-600 font-medium hover:text-blue-800 flex items-center text-sm sm:text-base"
                           >
-                            Next Step <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                            Next Step
+                            <svg
+                              className="w-4 h-4 sm:w-5 sm:h-5 ml-1"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
                           </button>
                         ) : (
                           <Link href="/contact">
-                            <p className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                            <p className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm sm:text-base">
                               Start Your Project
                             </p>
                           </Link>
@@ -688,8 +708,8 @@ export default function Services() {
                       key={index}
                       onClick={() => setActiveTestimonialIndex(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${activeTestimonialIndex === index
-                          ? "bg-blue-600 scale-125"
-                          : "bg-gray-300 hover:bg-gray-400"
+                        ? "bg-blue-600 scale-125"
+                        : "bg-gray-300 hover:bg-gray-400"
                         }`}
                       aria-label={`Go to testimonial ${index + 1}`}
                     />
