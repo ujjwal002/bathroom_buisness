@@ -821,7 +821,7 @@ export const blogPosts: BlogPost[] = [
         <div class="case-study">
           <h3>Project Highlight: The Forest Bathroom</h3>
           <div class="case-study-content">
-            <img src="/trends/forest-bathroom.jpg" alt="Forest bathroom">
+            <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/u37073pit1_1800.webp" alt="Forest bathroom">
             <div>
               <p>This award-winning design features:</p>
               <ul>
