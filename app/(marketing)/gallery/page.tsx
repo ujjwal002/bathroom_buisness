@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Define the GalleryImage type
 interface GalleryImage {
@@ -263,18 +264,18 @@ export default function Gallery() {
               is ready to help you create the bathroom of your dreams.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a 
+              <Link
                 href="/contact" 
                 className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
                 Get a Free Quote
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/services" 
                 className="px-8 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-gray-50 transition-colors"
               >
                 View Our Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>
