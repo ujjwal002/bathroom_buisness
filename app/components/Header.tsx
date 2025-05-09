@@ -255,7 +255,7 @@ export default function Header() {
                     </div>
                     <div>
                       <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
-                        Custom work
+                        Custom
                       </h4>
                       <p className="text-xs sm:text-sm text-gray-500 mt-1">Unique designs for your bathroom</p>
                     </div>
@@ -418,16 +418,16 @@ export default function Header() {
               <span>Walk-in Tubs</span>
             </Link>
             <Link
-              href="/services/custom-stonework"
+              href="/services/custom-works"
               className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
-                pathname === "/services/custom-stonework" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+                pathname === "/services/custom-works" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="p-1 rounded-full bg-blue-100 mr-3">
                 <Bath className="h-4 w-4 text-blue-600" />
               </div>
-              <span>Custom Stonework</span>
+              <span>Custom </span>
             </Link>
             <div className="px-4 py-2 border-t border-gray-200">
               <Link
