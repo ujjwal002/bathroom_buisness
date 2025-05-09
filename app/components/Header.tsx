@@ -394,9 +394,9 @@ export default function Header() {
               <span>Stone Bathroom Remodeling</span>
             </Link>
             <Link
-              href="/services/shower-conversion"
+              href="/services/shower-conversions"
               className={`flex items-center px-4 py-2 text-sm hover:bg-blue-50 transition-all ${
-                pathname === "/services/shower-conversion" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
+                pathname === "/services/shower-conversions" ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600"
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
