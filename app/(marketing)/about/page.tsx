@@ -246,7 +246,7 @@ export default function AboutPage() {
       shortQuote: "Val recently completed our master bathroom remodel, and we couldn’t be more pleased with the results...",
       quote:
         "Val recently completed our master bathroom remodel, and we couldn’t be more pleased with the results. His attention to detail and craftsmanship are truly exceptional. Working with marble walls and flooring can be challenging, but Val handled it with ease, showcasing his impressive skills. He also managed the plumbing and electrical work flawlessly, making the entire process smooth and stress-free for us. What stood out the most was Val’s patience and commitment to ensuring everything was done to perfection. He listened to our ideas, provided valuable suggestions, and executed the project with great care. The finished bathroom exceeds our expectations in every way. If you’re looking for someone who can handle every aspect of a remodel with expertise and professionalism, Val is the person to call. We highly recommend him for any remodeling projects!",
-      location: "Metro Detroit, MI",
+      location: "Livonia, MI",
       image: customerImages[3],
     },
     {
@@ -266,7 +266,7 @@ export default function AboutPage() {
       shortQuote: "Very professional, clean, respectful and got the job done in a timely manner...",
       quote:
         "Very professional, clean, respectful and got the job done in a timely manner. We got our basement bathroom refinished by them and we couldnt be happier with the results!",
-      location: "Metro Detroit, MI",
+      location: "Novi, MI",
       image: customerImages[5],
     },
     {
@@ -277,7 +277,7 @@ export default function AboutPage() {
         "Val and Cristian replaced my plumbing for my bathtub and I was very pleased by their professionalism and craftsmanship! I would recommend them to anyone I know!.",
       quote:
         "Val and Cristian replaced my plumbing for my bathtub and I was very pleased by their professionalism and craftsmanship! I would recommend them to anyone I know!.",
-      location: "Metro Detroit, MI",
+      location: "Troy, MI",
       image: customerImages[6],
     },
     {
@@ -287,7 +287,7 @@ export default function AboutPage() {
       shortQuote: "Phenomenal service, I would highly recommend reaching out to Stone Works Remodeling for all of your remodeling needs.",
       quote:
         "Phenomenal service, I would highly recommend reaching out to Stone Works Remodeling for all of your remodeling needs.",
-      location: "Metro Detroit, MI",
+      location: "Canton, MI",
       image: customerImages[7],
     },
     {
@@ -305,7 +305,7 @@ export default function AboutPage() {
       rating: "⭐⭐⭐⭐⭐",
       shortQuote: "Great service and results.",
       quote: "Great service and results.",
-      location: "Metro Detroit, MI",
+      location: "Plymouth, MI",
       image: customerImages[9],
     },
   ];
@@ -572,7 +572,7 @@ export default function AboutPage() {
             {[
               {
                 title: "Expert Craftsmanship",
-                description: "Over two decades of delivering superior bathroom remodels.",
+                description: "Over one decades of delivering superior bathroom remodels.",
               },
               {
                 title: "Personalized Service",
