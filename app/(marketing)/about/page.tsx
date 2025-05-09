@@ -233,7 +233,7 @@ export default function AboutPage() {
       id: 2,
       name: "Kelly Stanford",
       rating: "⭐⭐⭐⭐⭐",
-      shortQuote: "I just finished a Major master Bathroom remodel that Stone Works Remodeling completed for me in a timely manner...",
+      shortQuote: "We needed a walk-in tub for accessibility, and Stone Works Remodeling delivered a perfect solution with professional installation. Highly recommend!",
       quote:
         "I just finished a Major master Bathroom remodel that Stone Works Remodeling completed for me in a timely manner. They went over and above what I expected during our project, even taking on an additional project and doing our Family Rooms flooring project and installing LVP flooring. This was all done still within our time frame and we kept everything on schedule. Valjon and Cristain along with their connections with industry partners were able to streamline many of the projects timeframe and help keep them on budget. Plus all their resources were very knowledgeable and excellent in their area of expertise. I would not hesitate to recommend them to anyone for their next project and I am sure that soon it is going to be very difficult to get them without a long wait!!",
       location: "Metro Detroit, MI",

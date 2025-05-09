@@ -96,7 +96,7 @@ export default function Header() {
                 "https://stoneworkremodeling.com/services/bathroom-remodeling",
                 "https://stoneworkremodeling.com/services/shower-conversion",
                 "https://stoneworkremodeling.com/services/walk-in-tubs",
-                "https://stoneworkremodeling.com/services/custom-stonework",
+                "https://stoneworkremodeling.com/services/custom-works",
               ],
             },
           ]),
@@ -197,11 +197,11 @@ export default function Header() {
               >
                 <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4">
                   <h3 className="font-semibold text-base sm:text-lg">Our Premium Services</h3>
-                  <p className="text-xs sm:text-sm text-blue-100 mt-1">Stone bathroom solutions in Metro Detroit, MI</p>
+                  <p className="text-xs sm:text-sm text-blue-100 mt-1"> bathroom solutions in Metro Detroit, MI</p>
                 </div>
                 <div className="grid grid-cols-1 gap-0">
                   <Link
-                    href="/services"
+                    href="/services/bathroom-remodeling"
                     className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
@@ -210,13 +210,13 @@ export default function Header() {
                     </div>
                     <div>
                       <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
-                        Stone Bathroom Remodeling
+                         Bathroom Remodeling
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Complete stone bathroom renovations</p>
+                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Complete  bathroom renovations</p>
                     </div>
                   </Link>
                   <Link
-                    href="/services"
+                    href="/services/shower-conversions"
                     className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
@@ -231,7 +231,7 @@ export default function Header() {
                     </div>
                   </Link>
                   <Link
-                    href="/services"
+                    href="/services/walk-in-tubs"
                     className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
@@ -246,7 +246,7 @@ export default function Header() {
                     </div>
                   </Link>
                   <Link
-                    href="/services"
+                    href="/services/custom-works"
                     className="group/item flex items-center px-4 py-3 hover:bg-blue-50 transition-colors"
                     onClick={() => setServicesDropdownOpen(false)}
                   >
@@ -255,9 +255,9 @@ export default function Header() {
                     </div>
                     <div>
                       <h4 className="font-medium text-sm sm:text-base text-gray-900 group-hover/item:text-blue-600 transition-colors">
-                        Custom Stonework
+                        Custom work
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Unique stone designs for your bathroom</p>
+                      <p className="text-xs sm:text-sm text-gray-500 mt-1">Unique designs for your bathroom</p>
                     </div>
                   </Link>
                 </div>

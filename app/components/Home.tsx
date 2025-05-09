@@ -199,34 +199,34 @@ export default function HomePage() {
   const testimonials = [
     {
       id: 1,
-      name: "Jennifer L.",
+      name: "Cari Zupko.",
       location: "Metro Detroit, MI",
       quote:
-        "Stone Works Remodeling transformed our outdated bathroom into a stunning stone oasis. Their craftsmanship and attention to detail were exceptional!",
+        "The guys are great and hard workers. They were always on time and worked diligently. I love my new bathrooms. Would definitely recommend them!",
       rating: 5,
-      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user4.webp",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user1.webp",
       projectType: "",
-      alt: "Jennifer L., satisfied Stone Works Remodeling customer in Metro Detroit, MI",
+      alt: "Cari Zupko., satisfied Stone Works Remodeling customer in Metro Detroit, MI",
     },
     {
       id: 2,
-      name: "Michael T.",
+      name: "Kelly Stanford.",
       location: "Rochester, MI",
       quote:
         "We needed a walk-in tub for accessibility, and Stone Works Remodeling delivered a perfect solution with professional installation. Highly recommend!",
       rating: 5,
-      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user5.webp",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user2.webp",
       projectType: "Walk-in Tub Installation",
       alt: "Michael T., Stone Works Remodeling walk-in tub client in Rochester, MI",
     },
     {
       id: 3,
-      name: "Rachel K.",
+      name: "Amit Somani",
       location: "Faribault, MI",
       quote:
-        "Stone Works Remodeling’s shower conversion was flawless. The stone finishes and custom design made our bathroom feel luxurious!",
+        "Val recently completed our master bathroom remodel, and we couldn’t be more pleased with the results...",
       rating: 5,
-      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user3.webp",
+      image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user4.webp",
       projectType: "Tub-to-Shower Conversion",
       alt: "Rachel K., Stone Works Remodeling shower conversion client in Faribault, MI",
     },
