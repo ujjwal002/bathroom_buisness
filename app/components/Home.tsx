@@ -5,6 +5,10 @@ import Image from "next/image";
 import { Star, Check, Phone, ArrowRight, Clock, ChevronRight, Shield, Award, ThumbsUp } from "lucide-react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import { beforeAfterVideos } from "./VideoCard"; // Import VideoCard and beforeAfterVideos
+
+import VideoCard from "./VideoCard";
+
 
 
 // Lazy-load gallery images for performance
@@ -478,7 +482,7 @@ export default function HomePage() {
                 </h1>
                 <p className="text-lg md:text-xl mb-8 text-blue-100 max-w-2xl">
                   Discover expert bathroom remodeling in Metro Detroit, MI. Tailored designs, premium
-                   craftsmanship, and a satisfaction guarantee for your dream bathroom.
+                  craftsmanship, and a satisfaction guarantee for your dream bathroom.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -872,7 +876,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Free Consultation</h3>
                   <p className="text-gray-600">
-                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your 
+                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your
                     bathroom vision.
                   </p>
                 </div>
@@ -949,8 +953,8 @@ export default function HomePage() {
               <div className="inline-flex bg-gray-100 rounded-lg p-1">
                 <button
                   className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === "before-after"
-                      ? "bg-white text-blue-600 shadow-sm"
-                      : "text-gray-600 hover:text-gray-900"
+                    ? "bg-white text-blue-600 shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
                     }`}
                   onClick={() => setActiveTab("before-after")}
                 >
@@ -958,8 +962,8 @@ export default function HomePage() {
                 </button>
                 <button
                   className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === "recent-projects"
-                      ? "bg-white text-blue-600 shadow-sm"
-                      : "text-gray-600 hover:text-gray-900"
+                    ? "bg-white text-blue-600 shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
                     }`}
                   onClick={() => setActiveTab("recent-projects")}
                 >
@@ -970,69 +974,17 @@ export default function HomePage() {
 
             {activeTab === "before-after" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                  {
-                    before: beforeAfterImages[0],
-                    after: beforeAfterImages[1],
-                    title: "Master  Bathroom Renovation",
-                    desc: "Complete  remodel with custom shower and premium tiles in Metro Detroit, MI",
-                  },
-                  {
-                    before: beforeAfterImages[2],
-                    after: beforeAfterImages[3],
-                    title: "Tub-to-shower",
-                    desc: "Tub-to-shower conversion with  finishes and non-slip flooring in Metro Detroit, MI",
-                  },
-                  {
-                    before: beforeAfterImages[4],
-                    after: beforeAfterImages[5],
-                    title: "Free standing tub",
-                    desc: " walk-in tub with therapeutic jets and safety features in Metro Detroit, MI",
-                  },
-                ].map((item, index) => (
-                  <div
+                {beforeAfterVideos.map((video, index) => (
+                  <VideoCard
                     key={index}
-                    className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
-                  >
-                    <div className="relative">
-                      <DynamicGalleryImage
-                        src={item.before.src}
-                        alt={item.before.alt}
-                        width={item.before.width}
-                        height={item.before.height}
-                        className="w-full h-48 object-cover"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        placeholder="blur"
-                        blurDataURL={item.before.blurDataURL}
-                        quality={80}
-                        loading="lazy"
-                      />
-                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
-                        BEFORE
-                      </div>
-                    </div>
-                    <div className="relative">
-                      <DynamicGalleryImage
-                        src={item.after.src}
-                        alt={item.after.alt}
-                        width={item.after.width}
-                        height={item.after.height}
-                        className="w-full h-48 object-cover"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        placeholder="blur"
-                        blurDataURL={item.after.blurDataURL}
-                        quality={80}
-                        loading="lazy"
-                      />
-                      <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">
-                        AFTER
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold text-gray-900">{item.title}</h3>
-                      <p className="text-gray-600 text-sm">{item.desc}</p>
-                    </div>
-                  </div>
+                    videoId={video.videoId}
+                    title={video.title}
+                    description={video.description}
+                    thumbnail={video.thumbnail}
+                    duration={video.duration}
+                    uploadDate={video.uploadDate}
+                    alt={video.alt}
+                  />
                 ))}
               </div>
             )}
@@ -1161,7 +1113,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                 Bathroom Remodeling FAQs
+                Bathroom Remodeling FAQs
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Answers to common questions about  bathroom remodeling in Metro Detroit, MI.
