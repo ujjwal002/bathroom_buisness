@@ -293,56 +293,7 @@ export default function HomePage() {
     blurDataURL: string;
   }
 
-  const beforeAfterImages: GalleryImage[] = [
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/Gemini_Generated_Image_7bprdt7bprdt7bpr.webp",
-      alt: "Before  bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image.webp",
-      alt: "After  bathroom remodel in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image+(2).webp",
-      alt: "Before tub-to-shower conversion in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/_QE_wu8yh888nrX1JUzYt.webp",
-      alt: "After tub-to-shower conversion in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/image+(1).webp",
-      alt: "Before walk-in tub installation in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-    {
-      src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp",
-      alt: "After walk-in tub installation in Metro Detroit, MI by Stone Works Remodeling",
-      width: 500,
-      height: 300,
-      blurDataURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    },
-  ];
+  
 
   const recentProjects: GalleryImage[] = [
     {

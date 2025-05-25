@@ -63,7 +63,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
   thumbnail,
   duration,
   uploadDate,
-  alt,
+
 }) => {
   return (
     <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
