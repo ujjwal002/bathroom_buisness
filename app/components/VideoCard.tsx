@@ -15,33 +15,33 @@ interface Video {
 export const beforeAfterVideos: Video[] = [
   {
     videoId: "8UQjKR06Bkk",
-    title: "Master Bathroom Renovation in Metro Detroit, MI",
+    title: "Master Bathroom Renovation in Livonia",
     description:
-      "Watch our stunning transformation of a dated bathroom into a luxurious retreat with custom stone designs in Metro Detroit, MI.",
+      "Watch our stunning transformation of a dated bathroom into a luxurious retreat with custom stone designs in Livonia.",
     thumbnail: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp",
     duration: "PT2M30S",
     uploadDate: "2025-05-26",
-    alt: "Before and after master bathroom remodel by Stone Works Remodeling in Metro Detroit, MI",
+    alt: "Before and after master bathroom remodel by Stone Works Remodeling in Livonia",
   },
   {
     videoId: "WnJCf1mIm8I",
-    title: "Tub-to-Shower Conversion in Metro Detroit, MI",
+    title: "Tub-to-Shower Conversion in Farmington",
     description:
-      "See how we converted a tub into a spacious walk-in shower with modern finishes in Metro Detroit, MI.",
+      "See how we converted a tub into a spacious walk-in shower with modern finishes in Farmington.",
     thumbnail: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/2gOE7M5Mw4F9ecfLC92pQ.webp",
     duration: "PT1M45S",
     uploadDate: "2025-05-26",
-    alt: "Before and after tub-to-shower conversion by Stone Works Remodeling in Metro Detroit, MI",
+    alt: "Before and after tub-to-shower conversion by Stone Works Remodeling in Farmington",
   },
   {
     videoId: "H41U6hC63P4",
-    title: "Walk-in Tub Installation in Metro Detroit, MI",
+    title: "Walk-in Tub Installation in Plymouth",
     description:
-      "Explore our accessible walk-in tub installation with safety features and therapeutic jets in Metro Detroit, MI.",
+      "Explore our accessible walk-in tub installation with safety features and therapeutic jets in Plymouth.",
     thumbnail: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp",
     duration: "PT2M10S",
     uploadDate: "2025-05-26",
-    alt: "Before and after walk-in tub installation by Stone Works Remodeling in Metro Detroit, MI",
+    alt: "Before and after walk-in tub installation by Stone Works Remodeling in Plymouth",
   },
 ];
 

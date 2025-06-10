@@ -69,8 +69,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-600 mb-4 mt-4">
-              Stone Works Remodeling is your trusted expert in premium stone bathroom remodeling and
-              Custom Tile in Metro Detroit, MI. Unmatched craftsmanship. Exceptional service.
+              Stone Works Remodeling is your trusted expert in premium  bathroom remodeling and
+              custom tile in Metro Detroit, MI. Unmatched craftsmanship and Exceptional service.
             </p>
             <div className="flex space-x-4" aria-label="Social media links">
               <a
@@ -155,7 +155,7 @@ const Footer = () => {
                   href="/services/bathroom-remodeling"
                   className="text-gray-600 hover:text-blue-600"
                 >
-                  Stone Bathroom Remodeling
+                  Bathroom Remodeling
                 </Link>
               </li>
               <li>

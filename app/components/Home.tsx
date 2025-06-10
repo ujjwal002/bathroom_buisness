@@ -204,13 +204,13 @@ export default function HomePage() {
     {
       id: 1,
       name: "Cari Zupko.",
-      location: "Metro Detroit, MI",
+      location: "Livonia",
       quote:
         "The guys are great and hard workers. They were always on time and worked diligently. I love my new bathrooms. Would definitely recommend them!",
       rating: 5,
       image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/profile/user1.webp",
-      projectType: "",
-      alt: "Cari Zupko., satisfied Stone Works Remodeling customer in Metro Detroit, MI",
+      projectType: "Mutlitple Bathroom Remodel",
+      alt: "Cari Zupko., satisfied Stone Works Remodeling customer in Livonia",
     },
     {
       id: 2,
@@ -325,12 +325,12 @@ export default function HomePage() {
   // FAQs with local context
   const faqs = [
     {
-      question: "How long does a  bathroom remodel take in Metro Detroit, MI?",
+      question: "How long does a  bathroom remodel take ?",
       answer:
         "Most standard  bathroom remodels are completed within 10 business days. Larger projects or custom designs may take 2-3 weeks. We provide a specific timeline during your free Metro Detroit consultation.",
     },
     {
-      question: "Do you offer financing options for bathroom remodeling in Michigan?",
+      question: "Do you offer financing options for bathroom remodeling ?",
       answer:
         "Yes! We offer flexible financing options, including 0% interest for 12 months for qualified buyers in Metro Detroit, MI, and surrounding areas",
     },
@@ -426,7 +426,7 @@ export default function HomePage() {
                   id="hero-heading"
                   className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight "
                 >
-                  Transform Your Bathroom in Metro Detroit, MI <br className="hidden md:block" />
+                  Transform Your Bathroom  <br className="hidden md:block" />
                   <span className="text-blue-300 bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
                     Into a Luxurious  Retreat
                   </span>
@@ -566,7 +566,7 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <div className="flex items-center">
                 <Shield className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-700 font-medium">Insured & Engineer certified</span>
+                <span className="text-gray-700 font-medium">Insured & Engineer Certified</span>
               </div>
               <div className="flex items-center">
                 <Award className="h-6 w-6 text-blue-600 mr-2" />
@@ -815,7 +815,7 @@ export default function HomePage() {
                 Our Simple 4-Step  Remodeling Process
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We make your  bathroom transformation in Metro Detroit, MI, smooth and stress-free.
+                We make your  bathroom transformation , smooth and stress-free.
               </p>
             </div>
 
@@ -827,7 +827,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Free Consultation</h3>
                   <p className="text-gray-600">
-                    Schedule a free in-home consultation in Metro Detroit, MI, to discuss your
+                    Schedule a free in-home consultation , to discuss your
                     bathroom vision.
                   </p>
                 </div>
@@ -842,7 +842,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Personalized  Design</h3>
                   <p className="text-gray-600">
                     Our designers create a custom  bathroom plan with 3D renderings for your
-                    Metro Detroit,MI home.
+                   home.
                   </p>
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full h-1 w-24 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
@@ -855,8 +855,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Expert  Installation</h3>
                   <p className="text-gray-600">
-                    Our licensed professionals install your  bathroom with precision in Metro Detroit,
-                    MI.
+                    Our licensed professionals install your  bathroom with precision .
                   </p>
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full h-1 w-4 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
@@ -869,7 +868,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Final Walkthrough</h3>
                   <p className="text-gray-600">
-                    We ensure your new  bathroom in Metro Detroit, MI, meets your expectations with a
+                    We ensure your new  bathroom , meets your expectations with a
                     detailed walkthrough.
                   </p>
                 </div>
@@ -893,10 +892,10 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 id="gallery-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our  Bathroom Transformations in Metro Detroit, MI
+                Our Bathroom Transformations
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore real  bathroom projects showcasing our craftsmanship in Metro Detroit, MI.
+                Explore real  bathroom projects showcasing our craftsmanship .
               </p>
             </div>
 
@@ -990,7 +989,7 @@ export default function HomePage() {
                 What Customer in Metro Detroit Say
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Hear from homeowners in Metro Detroit, MI, who transformed their bathrooms with  Works
+                Hear from homeowners in Metro Detroit, MI, who transformed their bathrooms with Stone  Works
                 Remodeling.
               </p>
             </div>
@@ -1118,7 +1117,7 @@ export default function HomePage() {
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Schedule your free consultation today and start your journey to a luxurious stone
-              bathroom with  Works Remodeling.
+              bathroom with Stone Works Remodeling.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
