@@ -899,8 +899,8 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Address</h3>
-                    <p className="mt-1 text-gray-600">19042 Myron st,</p>
-                    <p className="mt-1 text-gray-600">Livonia, Michigan 48152</p>
+                    {/* <p className="mt-1 text-gray-600">19042 Myron st,</p> */}
+                    <p className="mt-1 text-gray-600">Livonia, MI</p>
                   </div>
                 </motion.div>
                 <motion.div

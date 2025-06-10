@@ -593,7 +593,7 @@ export default function HomePage() {
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From complete  bathroom remodels to walk-in tubs, our expert team delivers
-                exceptional results in Metro Detroit, MI.
+                exceptional results.
               </p>
             </div>
 

@@ -338,7 +338,7 @@ export default function BlogPage() {
             Transform Your Bathroom with Stone Works Remodeling
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8 fade-in visible">
-            Contact our expert team to bring your stone-inspired bathroom vision to life.
+            Contact our expert team to bring your bathroom vision to life.
           </p>
           <Link
             href="/contact"
