@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Explore the latest stone tile designs, from marble to slate, to elevate your bathroom remodel.",
     category: "stone-design",
     date: "2025-04-01",
-    author: "Jane Smith",
+    author: "Valjon Qejvani",
     image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.png",
     slug: "stone-tile-trends-2025",
     content: `
@@ -41,7 +41,6 @@ export const blogPosts: BlogPost[] = [
         
         <h2>1. Large-Format Marble Tiles</h2>
         <div class="image-container">
-          <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/BELLEZA-WHITE-MARBLE-EFFECT-TILE-LOUNGE.jpg.webp" alt="Large marble tiles in bathroom" width="800" height="500" class="rounded-lg shadow-lg">
           <p class="image-caption">Carrara marble tiles in a modern bathroom setting</p>
         </div>
         <p>Large-format marble tiles (24"x48" and larger) create a seamless, spa-like aesthetic with fewer grout lines. Their veined patterns add visual interest without overwhelming the space. We're particularly seeing:</p>
@@ -1015,11 +1014,13 @@ export const blogPosts: BlogPost[] = [
     "excerpt": "Discover the top 2.5 mistakes to steer clear of during your bathroom remodel to save time, money, and stress while creating a functional, stylish space.",
     "category": "remodeling-tips",
     "date": "2025-06-25",
-    "author": "Alex Johnson",
-    "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/bathroom-remodel-mistakes-2025.webp",
+    "author": "Valjon Qejvani",
+    "image": "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/ChatGPT+Image+Jun+25%2C+2025%2C+08_04_47+PM.webp",
     "slug": "bathroom-remodeling-mistakes-2025",
     "content": `
       <div class="blog-intro">
+        <img src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/ChatGPT+Image+Jun+25%2C+2025%2C+08_04_47+PM.webp" alt="Slate accent wall">
+
         <p class="lead">Remodeling your bathroom can elevate your home’s comfort and value, but common pitfalls can turn your dream project into a costly headache. At Stone Works Remodeling, we’ve pinpointed the top 2.5 mistakes to avoid in 2025 for a smooth, successful bathroom renovation.</p>
         <div class="trend-badge">
           <span>2025 Bathroom Remodeling Guide</span>
@@ -1109,7 +1110,6 @@ export const blogPosts: BlogPost[] = [
         <p>Avoid these mistakes with expert guidance from Stone Works Remodeling. Let’s create a bathroom that’s functional, stylish, and built to last.</p>
         <div class="cta-buttons">
           <a href="/contact">Schedule Your Free Consultation</a>
-          <a href="/portfolio">View Our Successful Remodels</a>
         </div>
       </div>
   
