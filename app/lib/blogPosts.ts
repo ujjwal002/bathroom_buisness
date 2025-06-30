@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     category: "stone-design",
     date: "2025-04-01",
     author: "Valjon Qejvani",
-    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/mHSA0TExdMsQjnyxRC3Wq.png",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic10.jpeg",
     slug: "stone-tile-trends-2025",
     content: `
         <p class="lead">As we move into 2025, natural stone continues to dominate bathroom design trends, offering both timeless elegance and modern sophistication. Homeowners in Metro Detroit are increasingly turning to stone materials to create spa-like retreats in their own homes.</p>
@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
     category: "project-spotlight",
     date: "2025-03-15",
     author: "Mike Johnson",
-    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/_QE_wu8yh888nrX1JUzYt.png",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic11.jpeg",
     slug: "marble-bathroom-transformation",
     content: `
         <h2>Project Overview</h2>
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
     category: "remodeling-tips",
     date: "2025-02-28",
     author: "Emily Davis",
-    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/2gOE7M5Mw4F9ecfLC92pQ.png",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic12.jpeg",
     slug: "choose-stone-shower",
     content: `
           <div class="blog-intro">
@@ -411,7 +411,7 @@ export const blogPosts: BlogPost[] = [
     category: "stone-design",
     date: "2025-02-10",
     author: "John Doe",
-    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/w6HJzxSeslcbuk0sJgPQc.png",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic13.jpeg",
     slug: "slate-bathroom-remodeling",
     content: `
           <div class="blog-intro">
@@ -564,7 +564,7 @@ export const blogPosts: BlogPost[] = [
     category: "company-updates",
     date: "2025-01-20",
     author: "Jane Smith",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic14.jpeg",
     slug: "stone-work-sustainability",
     content: `
           <div class="blog-intro">
@@ -712,7 +712,7 @@ export const blogPosts: BlogPost[] = [
     category: "trends",
     date: "2025-03-10",
     author: "Alex Johnson",
-    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/modern-bathroom-interior-with-double-sinks-smart-technology-control-panel.webp",
+    image: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic15.jpeg",
     slug: "bathroom-trends-2025",
     content: `
       <div class="blog-intro">

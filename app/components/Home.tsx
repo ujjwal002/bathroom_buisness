@@ -602,7 +602,7 @@ export default function HomePage() {
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic7.jpeg"
                     alt="Complete bathroom remodeling by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
@@ -650,7 +650,7 @@ export default function HomePage() {
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/_QE_wu8yh888nrX1JUzYt.webp"
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic9.jpeg"
                     alt="Free-Standing Tub by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
@@ -699,7 +699,7 @@ export default function HomePage() {
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/2gOE7M5Mw4F9ecfLC92pQ.webp"
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic8.jpeg"
                     alt="Walk-in Shower by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
@@ -748,7 +748,7 @@ export default function HomePage() {
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/w6HJzxSeslcbuk0sJgPQc.webp"
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic4.jpeg"
                     alt="Accessible Shower-tub combo by Stone Works Remodeling in Metro Detroit, MI"
                     width={500}
                     height={300}
