@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-600 mb-4 mt-4">
               Stone Works Remodeling is your trusted expert in premium  bathroom remodeling and
-              custom tile in Metro Detroit, MI. Unmatched craftsmanship and Exceptional service.
+              custom tile in Metro Detroit, MI. Unmatched craftsmanship and exceptional service.
             </p>
             <div className="flex space-x-4" aria-label="Social media links">
               <a
@@ -204,9 +204,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-gray-500 mt-1" aria-hidden="true" />
                 <span>
-                  19042 Myron st
-                  <br />
-                  Livonia, Michigan 48152
+                  Livonia, Michigan 
                 </span>
               </li>
             </ul>

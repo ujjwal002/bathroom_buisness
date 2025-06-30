@@ -204,7 +204,7 @@ export default function HomePage() {
     {
       id: 1,
       name: "Cari Zupko.",
-      location: "Livonia",
+      location: "Livonia, MI",
       quote:
         "The guys are great and hard workers. They were always on time and worked diligently. I love my new bathrooms. Would definitely recommend them!",
       rating: 5,
@@ -325,12 +325,12 @@ export default function HomePage() {
   // FAQs with local context
   const faqs = [
     {
-      question: "How long does a  bathroom remodel take ?",
+      question: "How long does a bathroom remodel take?",
       answer:
         "Most standard  bathroom remodels are completed within 10 business days. Larger projects or custom designs may take 2-3 weeks. We provide a specific timeline during your free Metro Detroit consultation.",
     },
     {
-      question: "Do you offer financing options for bathroom remodeling ?",
+      question: "Do you offer financing options for bathroom remodeling?",
       answer:
         "Yes! We offer flexible financing options, including 0% interest for 12 months for qualified buyers in Metro Detroit, MI, and surrounding areas",
     },
@@ -620,8 +620,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Transform your bathroom with our comprehensive  remodeling services in
-                    Metro Detroit, MI, featuring custom  tiles and fixtures.
+                    Transform your bathroom with our comprehensive  remodeling services, featuring custom  tiles and fixtures.
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-gray-700">
@@ -669,7 +668,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Upgrade your bathtub with a modern  replacement in Metro Detroit, MI, enhancing
+                    Upgrade your bathtub with a modern  replacement, enhancing
                     both style and functionality.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -718,7 +717,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Convert your tub into a spacious  shower in Metro Detroit, MI, with custom
+                    Convert your tub into a spacious  shower, with custom
                     designs and safety features.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -767,7 +766,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-6">
-                    Enhance bathroom safety with premium Shower-tub combo in Metro Detroit, MI, designed for
+                    Enhance bathroom safety with premium Shower-tub combo, designed for
                     comfort and accessibility.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -815,7 +814,7 @@ export default function HomePage() {
                 Our Simple 4-Step  Remodeling Process
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We make your  bathroom transformation , smooth and stress-free.
+                We make your  bathroom transformation, smooth and stress-free.
               </p>
             </div>
 
@@ -827,7 +826,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Free Consultation</h3>
                   <p className="text-gray-600">
-                    Schedule a free in-home consultation , to discuss your
+                    Schedule a free in-home consultation, to discuss your
                     bathroom vision.
                   </p>
                 </div>
@@ -855,7 +854,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Expert  Installation</h3>
                   <p className="text-gray-600">
-                    Our licensed professionals install your  bathroom with precision .
+                    Our licensed professionals install your  bathroom with precision.
                   </p>
                 </div>
                 <div className="hidden lg:block absolute top-1/2 left-full h-1 w-4 bg-blue-200 transform -translate-y-1/2 translate-x-4"></div>
@@ -868,7 +867,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Final Walkthrough</h3>
                   <p className="text-gray-600">
-                    We ensure your new  bathroom , meets your expectations with a
+                    We ensure your new  bathroom meets your expectations with a
                     detailed walkthrough.
                   </p>
                 </div>
@@ -895,7 +894,7 @@ export default function HomePage() {
                 Our Bathroom Transformations
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore real  bathroom projects showcasing our craftsmanship .
+                Explore real  bathroom projects showcasing our craftsmanship.
               </p>
             </div>
 
@@ -1113,10 +1112,10 @@ export default function HomePage() {
         >
           <div className="container mx-auto px-4 text-center">
             <h2 id="cta-heading" className="text-3xl md:text-4xl font-bold mb-6">
-              Ready for Your  Bathroom in Metro Detroit, MI?
+              Ready for Your Bathroom?
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Schedule your free consultation today and start your journey to a luxurious stone
+              Schedule your free consultation today and start your journey to a luxurious
               bathroom with Stone Works Remodeling.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

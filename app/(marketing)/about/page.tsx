@@ -226,7 +226,7 @@ export default function AboutPage() {
       name: "Cari Zupko",
       rating: "⭐⭐⭐⭐⭐",
       quote: "The guys are great and hard workers. They were always on time and worked diligently. I love my new bathrooms. Would definitely recommend them!",
-      location: "Livonia",
+      location: "Livonia, MI",
       image: customerImages[0],
     },
     {
@@ -236,7 +236,7 @@ export default function AboutPage() {
       shortQuote: "We needed a walk-in tub for accessibility, and Stone Works Remodeling delivered a perfect solution with professional installation. Highly recommend!",
       quote:
         "I just finished a Major master Bathroom remodel that Stone Works Remodeling completed for me in a timely manner. They went over and above what I expected during our project, even taking on an additional project and doing our Family Rooms flooring project and installing LVP flooring. This was all done still within our time frame and we kept everything on schedule. Valjon and Cristain along with their connections with industry partners were able to streamline many of the projects timeframe and help keep them on budget. Plus all their resources were very knowledgeable and excellent in their area of expertise. I would not hesitate to recommend them to anyone for their next project and I am sure that soon it is going to be very difficult to get them without a long wait!!",
-      location: "Plymouth",
+      location: "Plymouth, MI",
       image: customerImages[1],
     },
     {
@@ -256,7 +256,7 @@ export default function AboutPage() {
       shortQuote: "Valjon was very professional and mindful when working at my house. He’s attention to detail and work ethic was unmatched...",
       quote:
         "Valjon was very professional and mindful when working at my house. He’s attention to detail and work ethic was unmatched compared to other companies I’ve worked with before. If you are going to do any remodeling in your home, I would recommend using stone works remodeling! They are very reasonable with pricing and were supportive in any of my request!",
-      location: "Livonia",
+      location: "Livonia, MI",
       image: customerImages[4],
     },
     {
@@ -296,7 +296,7 @@ export default function AboutPage() {
       rating: "⭐⭐⭐⭐⭐",
       shortQuote: "Professional, timely, and clean.",
       quote: "Professional, timely, and clean.",
-      location: "Northville",
+      location: "Northville, MI",
       image: customerImages[8],
     },
     {

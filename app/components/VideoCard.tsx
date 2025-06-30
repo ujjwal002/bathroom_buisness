@@ -17,7 +17,7 @@ export const beforeAfterVideos: Video[] = [
     videoId: "8UQjKR06Bkk",
     title: "Master Bathroom Renovation in Livonia",
     description:
-      "Watch our stunning transformation of a dated bathroom into a luxurious retreat with custom stone designs .",
+      "Watch our stunning transformation of a dated bathroom into a luxurious retreat with custom stone designs.",
     thumbnail: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp",
     duration: "PT2M30S",
     uploadDate: "2025-05-26",
