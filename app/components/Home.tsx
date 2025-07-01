@@ -513,7 +513,7 @@ export default function HomePage() {
                 {/* Main Hero Image */}
                 <div className="relative bg-white p-2 rounded-xl shadow-2xl transform rotate-2 max-w-[600px] mx-auto">
                   <Image
-                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/webp/mHSA0TExdMsQjnyxRC3Wq.webp"
+                    src="https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic9.jpeg"
                     alt="Luxurious bathroom remodel by Stone Works Remodeling in Metro Detroit, MI"
                     width={600}
                     height={400}
