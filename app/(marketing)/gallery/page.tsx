@@ -19,7 +19,7 @@ const galleryImages: GalleryImage[] = [
   // From beforeAfterImages array
   {
     src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic1.jpeg",
-    alt: "Stone bathroom remodel in Ann Arbor, MI by Stone Works Remodeling",
+    alt: "Bathroom remodel in Ann Arbor, MI by Stone Works Remodeling",
     width: 500,
     height: 300,
     blurDataURL:
@@ -28,7 +28,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic3.jpeg",
-    alt: "Stone bathroom remodel in Canton, MI by Stone Works Remodeling",
+    alt: "Bathroom remodel in Canton, MI by Stone Works Remodeling",
     width: 500,
     height: 300,
     blurDataURL:
@@ -56,12 +56,12 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: "https://stoneworksremodlling.s3.ap-south-1.amazonaws.com/recent/pic9.jpeg",
-    alt: "Walk-in tub installation in Tray, MI by Stone Works Remodeling",
+    alt: "Walk-in tub installation in Troy, MI by Stone Works Remodeling",
     width: 500,
     height: 300,
     blurDataURL:
       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPk43HLQAAAABJRU5ErkJggg==",
-    location: "Tray, Michigan",
+    location: "Troy, Michigan",
 
   },
   {
