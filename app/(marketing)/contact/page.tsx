@@ -92,7 +92,7 @@ export default function ContactPage() {
   const handleSubmit = async (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
     setFormStatus("submitting");
     try {
-      const response = await fetch("https://verbalyte.com/api/stoneworkemail", {
+      const response = await fetch("https://dl4ltl1h1f.execute-api.us-east-1.amazonaws.com/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
